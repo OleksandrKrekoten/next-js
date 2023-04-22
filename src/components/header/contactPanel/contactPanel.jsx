@@ -10,14 +10,14 @@ const ContactPanel = () => {
         <div>
           <p>
             Mon-Thu:{" "}
-            <span>
+            <span >
               9:00 AM - 5:30 PM <AiOutlineDown />
             </span>
           </p>
         </div>
         <p>
           Visit our showroom in 1234 Street Adress City Address, 1234{" "}
-          <span>Contact Us</span>
+          <a>Contact Us</a>
         </p>
         <ContactLink>
           <p>Call Us: (00) 1234 5678</p>
