@@ -58,7 +58,10 @@ export const ContactLink = styled.div`
 `;
 export const WorkScheduleBlock = styled.div`
   position: absolute;
-  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  opacity: ${(props) => (props.isOpenSchedule ? 1 : 0)};
+  transform: ${(props) =>
+    props.isOpenSchedule ? "translateY()" : "translateY(-150%)"};
+
   top: 35px;
   left: 55px;
   width: 262px;

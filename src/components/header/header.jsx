@@ -3,10 +3,18 @@ import ContactPanel from "./contactPanel/contactPanel.jsx";
 import { HeaderWrapper } from "./header.js";
 import UserMenu from "./UserMenu/UserMenu.jsx";
 import Navigation from "./Navigation/Navigation.jsx";
+import { useState } from "react";
 const Header = () => {
+  const [isOpenSchedule, setIsOpenSchedule] = useState(false);
+  const handleToggle = () => {
+    setIsOpenSchedule(!isOpenSchedule);
+  };
   return (
     <header>
-      <ContactPanel />
+      <ContactPanel
+        handleToggle={handleToggle}
+        isOpenSchedule={isOpenSchedule}
+      />
       <HeaderWrapper>
         <a href="/">
           <Image

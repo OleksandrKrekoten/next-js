@@ -10,13 +10,10 @@ import {
   Icon,
   ContactWrapper,
 } from "./contactPanel.js";
-import { useState } from "react";
+
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaLocationArrow } from "react-icons/fa";
-const ContactPanel = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleToggle = () => setIsOpen(!isOpen);
-
+const ContactPanel = ({ isOpenSchedule, handleToggle }) => {
   return (
     <Wrapper>
       <div>
@@ -46,7 +43,7 @@ const ContactPanel = () => {
           </li>
         </ul>
       </ContactLink>
-      <WorkScheduleBlock isOpen={isOpen}>
+      <WorkScheduleBlock isOpenSchedule={isOpenSchedule}>
         <div>
           <Icon>
             <AiFillClockCircle />
