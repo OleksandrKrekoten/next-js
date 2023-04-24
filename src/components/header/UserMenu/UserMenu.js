@@ -7,7 +7,7 @@ export const UserWrapper = styled.div`
 export const SearcList = styled.ul`
   display: flex;
   align-items: center;
-  list-style: none;
+
   margin-right: 28px;
   li {
     :not(:last-child) {

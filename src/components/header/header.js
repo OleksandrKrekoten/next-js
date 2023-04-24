@@ -5,5 +5,6 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  margin-bottom: 300px;
 `;
 
