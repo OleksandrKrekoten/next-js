@@ -13,11 +13,11 @@ import {
 
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaLocationArrow } from "react-icons/fa";
-const ContactPanel = ({ isOpenSchedule, handleToggle }) => {
+const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
   return (
     <Wrapper>
       <div>
-        <button type="button" onClick={handleToggle}>
+        <button type="button" onClick={handleToggleSchedule}>
           Mon-Thu:{" "}
           <span>
             9:00 AM - 5:30 PM <AiOutlineDown />

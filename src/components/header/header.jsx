@@ -6,13 +6,24 @@ import Navigation from "./Navigation/Navigation.jsx";
 import { useState } from "react";
 const Header = () => {
   const [isOpenSchedule, setIsOpenSchedule] = useState(false);
-  const handleToggle = () => {
+  const [isOpenCart, setIsOpenCart] = useState(false);
+
+  const handleToggleSchedule = () => {
+    if (isOpenCart) {
+      setIsOpenCart(false);
+    }
     setIsOpenSchedule(!isOpenSchedule);
   };
+
+  const handleToggleCart = () => {
+    if (isOpenSchedule) {
+         setIsOpenSchedule(false);
+     } setIsOpenCart(!isOpenCart);
+   };
   return (
     <header>
       <ContactPanel
-        handleToggle={handleToggle}
+        handleToggleSchedule={handleToggleSchedule}
         isOpenSchedule={isOpenSchedule}
       />
       <HeaderWrapper>
@@ -26,7 +37,7 @@ const Header = () => {
           />
         </a>
         <Navigation />
-        <UserMenu />
+        <UserMenu handleToggleCart={handleToggleCart} isOpenCart={isOpenCart} />
       </HeaderWrapper>
     </header>
   );

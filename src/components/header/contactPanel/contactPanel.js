@@ -58,10 +58,7 @@ export const ContactLink = styled.div`
 `;
 export const WorkScheduleBlock = styled.div`
   position: absolute;
-  opacity: ${(props) => (props.isOpenSchedule ? 1 : 0)};
-  transform: ${(props) =>
-    props.isOpenSchedule ? "translateY()" : "translateY(-150%)"};
-
+  display: ${(props) => (props.isOpenSchedule ?'blocl' : 'none')};
   top: 35px;
   left: 55px;
   width: 262px;
@@ -69,11 +66,11 @@ export const WorkScheduleBlock = styled.div`
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
   padding: 10px 8px;
   transition: opacity 400 ease-in;
-  span {
-    color: #000;
-  }
+  color: #000;
+
   & > div {
     :not(:last-child) {
       display: flex;
