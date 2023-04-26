@@ -5,24 +5,57 @@ import UserMenu from "./UserMenu/UserMenu.jsx";
 import Navigation from "./Navigation/Navigation.jsx";
 import { useState } from "react";
 import Link from "next/link.js";
+import SearchBar from "./SearchBar/SearchBar.jsx";
+
 const Header = () => {
   const [isOpenSchedule, setIsOpenSchedule] = useState(false);
   const [isOpenCart, setIsOpenCart] = useState(false);
+  const [isOpenUserList, setIsOpenUserList] = useState(false);
+  const [isOpenSearchBar, setisOpenSearchBar] = useState(false);
 
+  const handleToggleSearchBar = () => {
+    if (isOpenSchedule) {
+      setIsOpenSchedule(false);
+    } else if (isOpenCart) {
+      setIsOpenCart(false);
+    } else if (isOpenUserList) {
+      setIsOpenUserList(false);
+    }
+    setisOpenSearchBar(!isOpenSearchBar);
+  };
 
+  const handleToggleUserList = () => {
+    if (isOpenSchedule) {
+      setIsOpenSchedule(false);
+    } else if (isOpenCart) {
+      setIsOpenCart(false);
+    } else if (isOpenSearchBar) {
+      setisOpenSearchBar(false);
+    }
+    setIsOpenUserList(!isOpenUserList);
+  };
 
   const handleToggleSchedule = () => {
     if (isOpenCart) {
       setIsOpenCart(false);
+    } else if (isOpenUserList) {
+      setIsOpenUserList(false);
+    } else if (isOpenSearchBar) {
+      setisOpenSearchBar(false);
     }
     setIsOpenSchedule(!isOpenSchedule);
   };
 
   const handleToggleCart = () => {
     if (isOpenSchedule) {
-         setIsOpenSchedule(false);
-     } setIsOpenCart(!isOpenCart);
-   };
+      setIsOpenSchedule(false);
+    } else if (isOpenUserList) {
+      setIsOpenUserList(false);
+    } else if (isOpenSearchBar) {
+      setisOpenSearchBar(false);
+    }
+    setIsOpenCart(!isOpenCart);
+  };
   return (
     <header>
       <ContactPanel
@@ -39,8 +72,15 @@ const Header = () => {
             priority={true}
           />
         </Link>
-        <Navigation />
-        <UserMenu handleToggleCart={handleToggleCart} isOpenCart={isOpenCart} />
+        {isOpenSearchBar ? <SearchBar /> : <Navigation />}
+        <UserMenu
+          handleToggleCart={handleToggleCart}
+          isOpenCart={isOpenCart}
+          handleToggleUserList={handleToggleUserList}
+          isOpenUserList={isOpenUserList}
+          handleToggleSearchBar={handleToggleSearchBar}
+          isOpenSearchBar={isOpenSearchBar}
+        />
       </HeaderWrapper>
     </header>
   );

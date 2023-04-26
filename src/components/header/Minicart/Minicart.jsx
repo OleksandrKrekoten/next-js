@@ -12,7 +12,7 @@ import {
 } from "./Minicart.js";
 import { ImPaypal } from "react-icons/im";
 import Image from "next/image.js";
-export const Minicart = ({ isOpenCart }) => {
+ const Minicart = ({ isOpenCart }) => {
   return (
     <Cart isOpenCart={isOpenCart}>
       <Arrow/>
@@ -58,3 +58,4 @@ export const Minicart = ({ isOpenCart }) => {
     </Cart>
   );
 };
+export default Minicart;
