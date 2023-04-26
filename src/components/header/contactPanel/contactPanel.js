@@ -58,25 +58,23 @@ export const ContactLink = styled.div`
 `;
 export const WorkScheduleBlock = styled.div`
   position: absolute;
-  display: ${(props) => (props.isOpenSchedule ?'blocl' : 'none')};
+  display: ${(props) => (props.isOpenSchedule ? "blocl" : "none")};
   top: 35px;
   left: 55px;
   width: 262px;
-  height: 238px;
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #808080;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
   border-radius: 12px;
   padding: 10px 8px;
   transition: opacity 400 ease-in;
   color: #000;
-
-  & > div {
-    :not(:last-child) {
-      display: flex;
-      padding: 10px 0;
-      border-bottom: 1px solid #cacdd8;
-    }
+`;
+export const ScheduleWrapper = styled.div`
+  :not(:last-child) {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #cacdd8;
   }
 `;
 export const Icon = styled.div`
@@ -96,5 +94,36 @@ export const ContactWrapper = styled.div`
   }
   span {
     color: #0156ff;
+  }
+`;
+export const Arrow = styled.div`
+  position: absolute;
+  border-style: solid;
+  _border-style: dashed;
+  border-width: 9px;
+  border-color: transparent;
+  border-top-width: 0;
+  border-bottom: 9px solid #808080;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  top: -9px;
+  left: 9px;
+  ::before {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 8px;
+    border-color: transparent;
+    border-top-width: 0;
+    border-bottom: 9px solid #fff;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    top: 1px;
+    left: -8px;
   }
 `;

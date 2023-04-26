@@ -8,12 +8,14 @@ import {
   CartSum,
   LinkToCheckout,
   LinkToPayPal,
+  Arrow,
 } from "./Minicart.js";
 import { ImPaypal } from "react-icons/im";
 import Image from "next/image.js";
 export const Minicart = ({ isOpenCart }) => {
   return (
     <Cart isOpenCart={isOpenCart}>
+      <Arrow/>
       <CartTitle>My Cart</CartTitle>
       <CartSubtitle>2 item in cart</CartSubtitle>
       <LinkToCart href="/">View or Edit Your Cart</LinkToCart>

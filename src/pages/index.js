@@ -1,4 +1,4 @@
-import Header from "@/components/header/header.jsx";
+import Header from "@/components/header/Header.jsx";
 import styles from "@/styles/Home.module.css";
 
 const Home = () => {

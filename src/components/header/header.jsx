@@ -1,12 +1,21 @@
 import Image from "next/image.js";
-import ContactPanel from "./contactPanel/contactPanel.jsx";
+import ContactPanel from "./ContactPanel/ContactPanel.jsx";
 import { HeaderWrapper } from "./header.js";
 import UserMenu from "./UserMenu/UserMenu.jsx";
 import Navigation from "./Navigation/Navigation.jsx";
 import { useState } from "react";
+import Link from "next/link.js";
 const Header = () => {
   const [isOpenSchedule, setIsOpenSchedule] = useState(false);
   const [isOpenCart, setIsOpenCart] = useState(false);
+  const [isOpenUserList, setIsOpenUserList] = useState(false);
+  const handleToggleUserList = () => {
+    if (isOpenCart || isOpenSchedule) {
+      setIsOpenCart(false);
+      setIsOpenSchedule(false);
+    }
+    setIsOpenSchedule(!isOpenUserList);
+  };
 
   const handleToggleSchedule = () => {
     if (isOpenCart) {
@@ -27,7 +36,7 @@ const Header = () => {
         isOpenSchedule={isOpenSchedule}
       />
       <HeaderWrapper>
-        <a href="/">
+        <Link href="/">
           <Image
             src="/Logo.svg"
             alt="Logo"
@@ -35,7 +44,7 @@ const Header = () => {
             height={70}
             priority={true}
           />
-        </a>
+        </Link>
         <Navigation />
         <UserMenu handleToggleCart={handleToggleCart} isOpenCart={isOpenCart} />
       </HeaderWrapper>

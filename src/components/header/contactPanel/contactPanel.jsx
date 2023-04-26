@@ -9,10 +9,13 @@ import {
   WorkScheduleBlock,
   Icon,
   ContactWrapper,
-} from "./contactPanel.js";
+  Arrow,
+  ScheduleWrapper
+} from "./ContactPanel.js";
 
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link.js";
 const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
   return (
     <Wrapper>
@@ -26,25 +29,26 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
       </div>
       <p>
         Visit our showroom in 1234 Street Adress City Address, 1234{" "}
-        <a>Contact Us</a>
+        <Link href="/">Contact Us</Link>
       </p>
       <ContactLink>
         <p>Call Us: (00) 1234 5678</p>
         <ul>
           <li>
-            <a href="/">
+            <Link href="/">
               <TiSocialInstagramCircular />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link href="/">
               <TiSocialFacebookCircular />
-            </a>
+            </Link>
           </li>
         </ul>
       </ContactLink>
       <WorkScheduleBlock isOpenSchedule={isOpenSchedule}>
-        <div>
+        <Arrow> </Arrow>
+        <ScheduleWrapper>
           <Icon>
             <AiFillClockCircle />
           </Icon>
@@ -69,8 +73,8 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
               </li>
             </ul>
           </div>
-        </div>
-        <div>
+        </ScheduleWrapper>
+        <ScheduleWrapper>
           <Icon>
             <FaLocationArrow />
           </Icon>
@@ -80,20 +84,20 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
               <br /> City Address, 1234
             </span>
           </div>
-        </div>
+        </ScheduleWrapper>
         <ContactWrapper>
-          <a href="tel:(00) 1234 5678">
+          <Link href="tel:(00) 1234 5678">
             <p>
               {" "}
               Phones: <span>(00) 1234 5678</span>
             </p>
-          </a>
-          <a href="shop@email.com">
+          </Link>
+          <Link href="mailto:shop@email.com">
             <p>
               {" "}
               E-mail: <span>shop@email.com</span>
             </p>
-          </a>
+          </Link>
         </ContactWrapper>
       </WorkScheduleBlock>
     </Wrapper>

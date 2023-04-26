@@ -40,3 +40,30 @@ export const navLinks = [
     path: "our-deals",
   },
 ];
+export const UserLinks = [
+  {
+    name: "My  Account",
+    id: "MyAccount",
+    path: "user",
+  },
+  {
+    name: "My Wish List",
+    id: "MyWishList",
+    path: "wish-list",
+  },
+  {
+    name: "Compare",
+    id: "Compare",
+    path: "compare",
+  },
+  {
+    name: "Create an Account",
+    id: "CreateanAccount",
+    path: "register",
+  },
+  {
+    name: "Sign In",
+    id: "SignIn",
+    path: "login",
+  },
+];
