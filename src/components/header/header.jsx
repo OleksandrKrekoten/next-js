@@ -8,14 +8,8 @@ import Link from "next/link.js";
 const Header = () => {
   const [isOpenSchedule, setIsOpenSchedule] = useState(false);
   const [isOpenCart, setIsOpenCart] = useState(false);
-  const [isOpenUserList, setIsOpenUserList] = useState(false);
-  const handleToggleUserList = () => {
-    if (isOpenCart || isOpenSchedule) {
-      setIsOpenCart(false);
-      setIsOpenSchedule(false);
-    }
-    setIsOpenSchedule(!isOpenUserList);
-  };
+
+
 
   const handleToggleSchedule = () => {
     if (isOpenCart) {
