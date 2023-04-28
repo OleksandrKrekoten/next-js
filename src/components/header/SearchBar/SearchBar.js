@@ -2,8 +2,10 @@ import {  Field, Form } from "formik";
 import styled from "@emotion/styled";
 
 export const FormContainer = styled(Form)`
+  display: flex;
+  flex-direction: row;
   width: 100%;
-
+  margin-left: 10px;
 `;
 export const Input = styled(Field)`
   width: 80%;
@@ -21,7 +23,7 @@ export const SubmitBtn = styled.button`
   font-size: 19px;
   background-color: transparent;
   border: none;
-  margin-left: 20px;
+  margin:0 10px;
   transition: color ease-out 400ms;
   :hover,
   :focus {

@@ -10,7 +10,8 @@ import {
   Icon,
   ContactWrapper,
   Arrow,
-  ScheduleWrapper
+  ScheduleWrapper,
+  Description,
 } from "./ContactPanel.js";
 
 import { AiFillClockCircle } from "react-icons/ai";
@@ -27,10 +28,10 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
           </span>
         </button>
       </div>
-      <p>
+      <Description>
         Visit our showroom in 1234 Street Adress City Address, 1234{" "}
         <Link href="/">Contact Us</Link>
-      </p>
+      </Description>
       <ContactLink>
         <p>Call Us: (00) 1234 5678</p>
         <ul>

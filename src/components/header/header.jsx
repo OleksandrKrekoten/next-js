@@ -6,6 +6,8 @@ import Navigation from "./Navigation/Navigation.jsx";
 import { useState } from "react";
 import Link from "next/link.js";
 import SearchBar from "./SearchBar/SearchBar.jsx";
+import { Container } from "../Container.js";
+import MobileMenu from "./MobileMenu/MobileMenu.jsx";
 
 const Header = () => {
   const [isOpenSchedule, setIsOpenSchedule] = useState(false);
@@ -57,32 +59,38 @@ const Header = () => {
     setIsOpenCart(!isOpenCart);
   };
   return (
-    <header>
-      <ContactPanel
-        handleToggleSchedule={handleToggleSchedule}
-        isOpenSchedule={isOpenSchedule}
-      />
-      <HeaderWrapper>
-        <Link href="/">
-          <Image
-            src="/Logo.svg"
-            alt="Logo"
-            width={85}
-            height={70}
-            priority={true}
-          />
-        </Link>
-        {isOpenSearchBar ? <SearchBar /> : <Navigation />}
-        <UserMenu
-          handleToggleCart={handleToggleCart}
-          isOpenCart={isOpenCart}
-          handleToggleUserList={handleToggleUserList}
-          isOpenUserList={isOpenUserList}
-          handleToggleSearchBar={handleToggleSearchBar}
-          isOpenSearchBar={isOpenSearchBar}
+    <Container>
+      <header>
+        <ContactPanel
+          handleToggleSchedule={handleToggleSchedule}
+          isOpenSchedule={isOpenSchedule}
         />
-      </HeaderWrapper>
-    </header>
+        <HeaderWrapper>
+          <div>
+            {" "}
+            <Link href="/">
+              <Image
+                src="/Logo.svg"
+                alt="Logo"
+                width={34}
+                height={40}
+                priority={true}
+              />
+            </Link>
+          </div>
+          {isOpenSearchBar ? <SearchBar /> : <Navigation />}
+          <MobileMenu/>
+          <UserMenu
+            handleToggleCart={handleToggleCart}
+            isOpenCart={isOpenCart}
+            handleToggleUserList={handleToggleUserList}
+            isOpenUserList={isOpenUserList}
+            handleToggleSearchBar={handleToggleSearchBar}
+            isOpenSearchBar={isOpenSearchBar}
+          />
+        </HeaderWrapper>
+      </header>
+    </Container>
   );
 };
 export default Header;

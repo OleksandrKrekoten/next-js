@@ -10,7 +10,7 @@ const SearchBar = () => {
         }}
       >
         <FormContainer>
-          <div>
+          
             <Input
               name="query"
               type="text"
@@ -19,7 +19,7 @@ const SearchBar = () => {
             <SubmitBtn type="submit">
               <FiSearch />
             </SubmitBtn>
-          </div>
+          
         </FormContainer>
       </Formik>
     );

@@ -87,7 +87,7 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
-  padding: 0 100px;
+  
   color: rgb(var(--foreground-rgb));
   background-color: #fff;
   color: #000;

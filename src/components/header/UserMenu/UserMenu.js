@@ -9,10 +9,18 @@ export const SearcList = styled.ul`
   display: flex;
   align-items: center;
 
-  margin-right: 28px;
+  margin-right: 10px;
+
+  @media screen and (min-width: 500px) {
+    margin-right: 28px;
+  }
+
   li {
     :not(:last-child) {
-      margin-right: 25px;
+      margin-right: 10px;
+      @media screen and (min-width: 500px) {
+        margin-right: 25px;
+      }
     }
     button {
       font-size: 19px;

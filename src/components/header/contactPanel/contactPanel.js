@@ -11,6 +11,13 @@ export const Wrapper = styled.div`
   font-size: 12px;
   line-height: 1.5;
   color: #acacac;
+  padding: 0 10px;
+  @media screen and (min-width: 800px) {
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 1350px) {
+    padding: 0 35px;
+  }
   button {
     border: none;
     background-color: transparent;
@@ -37,7 +44,12 @@ export const ContactLink = styled.div`
   color: #ffffff;
 
   p {
+    display: none;
     margin-right: 14px;
+    @media screen and (min-width: 500px) {
+     display: block;
+    }
+   
   }
   ul {
     display: flex;
@@ -55,6 +67,14 @@ export const ContactLink = styled.div`
       }
     }
   }
+`;
+export const Description = styled.p`
+  display: none;
+  @media screen and (min-width: 840px) {
+    display: block;
+    font-size: 12px;
+  }
+ 
 `;
 export const WorkScheduleBlock = styled.div`
   position: absolute;
