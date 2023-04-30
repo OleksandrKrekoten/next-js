@@ -1,11 +1,46 @@
 import styled from "@emotion/styled";
 
-export const MobileNavList = styled.ul`
-  position: absolute;
-  display: block;
+export const MobileNav = styled.div`
+  position: fixed;
+  z-index: 999;
+
   top: 0;
   right: 0;
   width: 300px;
   height: 100vh;
   background-color: #fff;
+  padding: 50px 30px;
+
+  @media screen and (min-width: 860px) {
+    display: none;
+  }
+  transition: transform 300ms ease-in-out;
+  transform: ${({ isOpenMobileMenu }) =>
+    isOpenMobileMenu ? "translateX(0)" : "translateX(100%)"};
+`;
+export const MobileNavList = styled.ul`
+  li {
+    padding: 10px;
+    transition: color ease-out 400ms;
+    :not(:last-child) {
+      margin-bottom: 10px;
+      :hover,
+      :focus {
+        color: #0156ff;
+      }
+    }
+  }
+`;
+
+export const CloseModalBtn = styled.button`
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #000;
+  font-size: 30px;
+  transition: color ease-out 400ms;
+  :hover,
+  :focus {
+    color: #0156ff;
+  }
 `;

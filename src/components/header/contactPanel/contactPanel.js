@@ -78,6 +78,7 @@ export const Description = styled.p`
 `;
 export const WorkScheduleBlock = styled.div`
   position: absolute;
+  z-index: 999;
   display: ${(props) => (props.isOpenSchedule ? "blocl" : "none")};
   top: 35px;
   left: 55px;

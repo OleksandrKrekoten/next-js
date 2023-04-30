@@ -1,18 +1,24 @@
 import Link from "next/link";
 import { navLinks } from "../../../constants";
-import {MobileNavList} from './MobileMenu.js'
-const MobileMenu = () => {
+import { MobileNav, MobileNavList, CloseModalBtn } from "./MobileMenu.js";
+import { AiFillCloseCircle } from "react-icons/ai";
+const MobileMenu = ({ handleToggleMobileMenu, isOpenMobileMenu }) => {
   return (
-    <MobileNavList>
-      {navLinks &&
-        navLinks.map(({ name, id, path }) => {
-          return (
-            <li key={id}>
-              <Link href={path}>{name}</Link>
-            </li>
-          );
-        })}
-    </MobileNavList>
+    <MobileNav isOpenMobileMenu={isOpenMobileMenu}>
+      <CloseModalBtn type="button" onClick={handleToggleMobileMenu}>
+        <AiFillCloseCircle />
+      </CloseModalBtn>
+      <MobileNavList>
+        {navLinks &&
+          navLinks.map(({ name, id, path }) => {
+            return (
+              <li key={id}>
+                <Link href={path}>{name}</Link>
+              </li>
+            );
+          })}
+      </MobileNavList>
+    </MobileNav>
   );
 };
 export default MobileMenu;

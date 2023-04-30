@@ -38,6 +38,7 @@ export const SearcList = styled.ul`
 
 export const UserList = styled.ul`
   position: absolute;
+  z-index: 999;
   display: ${(props) => (props.isOpenUserList ? "block" : "none")};
   top: 46px;
   right: -14px;

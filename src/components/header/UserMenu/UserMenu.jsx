@@ -5,6 +5,7 @@ import Image from "next/image.js";
 import  Minicart  from "../Minicart/Minicart.jsx";
 import { UserLinks } from "../../../constants/index.js";
 import Link from "next/link.js";
+
 const UserMenu = ({
   isOpenCart,
   handleToggleCart,

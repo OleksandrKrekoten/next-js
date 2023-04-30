@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 export const NavList = styled.ul`
   display: none;
-  list-style: none;
+  
   align-items: center;
   margin: 0 10px;
   @media screen and (min-width: 860px) {

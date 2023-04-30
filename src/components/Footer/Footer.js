@@ -2,12 +2,20 @@ import styled from "@emotion/styled";
 import { Field } from "formik";
 export const PageFooter = styled.footer`
   background-color: #000;
+ 
 `;
 
 export const FooterSuport = styled.div`
-background-color: #fff;
-color: #000;
-`
+  background-color: #fff;
+  color: #000;
+  padding:0 10px;
+  @media screen and (min-width: 768px) {
+    padding:0 20px;
+  }
+  @media screen and (min-width: 1350px) {
+    padding:0 35px;
+  }
+`;
 export const SuportList = styled.ul`
 display:flex;
 align-items: center;
@@ -47,10 +55,17 @@ export const SuportIcon = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
-  display: flex;
+  
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 40px 10px;
   color: #fff;
+ 
+  @media screen and (min-width: 768px) {
+    padding:40px 20px;
+  }
+  @media screen and (min-width: 1350px) {
+    padding:40px 35px;
+  }
 `;
 export const FooterTitle = styled.h2`
   font-weight: 500;
@@ -95,8 +110,15 @@ export const FooterPaymentInfo = styled.div`
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 10;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
+  @media screen and (min-width: 768px) {
+    padding:20px 20px;
+  }
+  @media screen and (min-width: 1350px) {
+    padding:20px 35px;
+  }
   p {
     font-weight: 500;
     font-size: 12px;

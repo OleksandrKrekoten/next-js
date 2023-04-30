@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Link from "next/link";
 export const Cart = styled.div`
   position: absolute;
+  z-index: 999;
   display: ${(props) => (props.isOpenCart ? "flex" : "none")};
 
   flex-direction: column;
