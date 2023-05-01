@@ -1,4 +1,4 @@
-import { Formik, Form } from "formik";
+import { Formik } from "formik";
 import {
   PageFooter,
   FooterWrapper,
@@ -11,6 +11,7 @@ import {
   FooterPaymentInfo,
   SocialLink,
   PaymentList,
+  FooterForm,
 } from "./Footer.js";
 import { suportContent, paymentMethods } from "../../constants/index.js";
 import {
@@ -50,10 +51,10 @@ const Footer = () => {
                 console.log(values);
               }}
             >
-              <Form>
+              <FooterForm>
                 <Input name="email" type="email" placeholder="Your Email" />
                 <SubmitBtn type="submit">Subscribe</SubmitBtn>
-              </Form>
+              </FooterForm>
             </Formik>
           </div>
         </FooterWrapper>
