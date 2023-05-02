@@ -1,27 +1,17 @@
 import styled from "@emotion/styled";
-import { Field,Form } from "formik";
-export const PageFooter = styled.footer`
-  background-color: #000;
- 
-`;
+import { Field, Form } from "formik";
+
 
 export const FooterSuport = styled.div`
   background-color: #fff;
   color: #000;
-  padding:0 10px;
-  @media screen and (min-width: 768px) {
-    padding:0 20px;
-  }
-  @media screen and (min-width: 1350px) {
-    padding:0 35px;
-  }
 `;
-export const SuportList = styled.ul`
+export const SuportList = styled.ul` 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -41,7 +31,7 @@ export const SuportItem = styled.li`
       margin-right: 130px;
     }
   }
-  
+
   h3 {
     font-weight: 700;
     font-size: 18px;
@@ -62,22 +52,18 @@ export const SuportIcon = styled.div`
   background-color: #0156ff;
   border-radius: 50%;
   font-size: 60px;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 `;
 
 export const FooterWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 10px;
+  padding: 40px 0;
   color: #fff;
- 
-  @media screen and (min-width: 768px) {
-    padding:40px 20px;
-  }
-  @media screen and (min-width: 1350px) {
-    padding:40px 35px;
-  }
+`;
+export const FooterBackground = styled.div`
+  background-color: #020202;
 `;
 export const FooterTitle = styled.h2`
   font-weight: 500;
@@ -85,7 +71,6 @@ export const FooterTitle = styled.h2`
   line-height: 1.3;
   color: #ffffff;
   margin-bottom: 10px;
-  
 `;
 export const FooterSubtitle = styled.p`
   font-weight: 300;
@@ -94,16 +79,16 @@ export const FooterSubtitle = styled.p`
   color: #ffffff;
 `;
 export const FooterForm = styled(Form)`
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
 export const Input = styled(Field)`
   width: 90%;
   height: 50px;
-  background: #000000;
+  background: transparent;
   border: 2px solid #ffffff;
   border-radius: 4px;
   padding-left: 10px;
@@ -138,7 +123,6 @@ export const SubmitBtn = styled.button`
   margin-top: 25px;
   @media screen and (min-width: 600px) {
     width: 150px;
-   
   }
   @media screen and (min-width: 910px) {
     margin-top: 0;
@@ -149,15 +133,9 @@ export const FooterPaymentInfo = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   color: #fff;
-  padding: 15px 10px;
+  padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  
-  @media screen and (min-width: 768px) {
-    padding:15px 20px;
-  }
-  @media screen and (min-width: 1350px) {
-    padding:15px 35px;
-  }
+
   p {
     font-weight: 500;
     font-size: 12px;
@@ -173,5 +151,5 @@ export const SocialLink = styled.ul`
   color: #fff;
 `;
 export const PaymentList = styled.ul`
-display: flex;
-`
+  display: flex;
+`;

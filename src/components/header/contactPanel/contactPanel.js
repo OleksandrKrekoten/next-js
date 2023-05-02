@@ -1,23 +1,21 @@
 import styled from "@emotion/styled";
 
+export const HeaderContactPanel = styled.div`
+  background-color: #020202;
+`;
+
 export const Wrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #020202;
+  
   height: 44px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
   color: #acacac;
-  padding: 0 10px;
-  @media screen and (min-width: 800px) {
-    padding: 0 15px;
-  }
-  @media screen and (min-width: 1350px) {
-    padding: 0 35px;
-  }
+
   button {
     border: none;
     background-color: transparent;

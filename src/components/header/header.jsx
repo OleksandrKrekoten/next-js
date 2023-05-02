@@ -72,12 +72,12 @@ const Header = () => {
     setIsOpenCart(!isOpenCart);
   };
   return (
-    <Container>
-      <header>
-        <ContactPanel
-          handleToggleSchedule={handleToggleSchedule}
-          isOpenSchedule={isOpenSchedule}
-        />
+    <header>
+      <ContactPanel
+        handleToggleSchedule={handleToggleSchedule}
+        isOpenSchedule={isOpenSchedule}
+      />
+      <Container>
         <HeaderWrapper>
           <div style={{ display: "flex" }}>
             {" "}
@@ -111,8 +111,8 @@ const Header = () => {
             />
           </Portal>
         </HeaderWrapper>
-      </header>
-    </Container>
+      </Container>
+    </header>
   );
 };
 export default Header;
