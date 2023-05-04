@@ -33,7 +33,7 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
           </div>
           <Description>
             Visit our showroom in 1234 Street Adress City Address, 1234{" "}
-            <Link href="/">Contact Us</Link>
+            <Link href="/contact-us">Contact Us</Link>
           </Description>
           <ContactLink>
             <p>Call Us: (00) 1234 5678</p>
