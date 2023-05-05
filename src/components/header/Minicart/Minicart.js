@@ -1,5 +1,20 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
+
+export const CloseBtn = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  font-size: 20px;
+  padding: 20px;
+  transition: color ease-out 400ms;
+  :hover,
+  :focus {
+    color: #0156ff;
+  }
+`;
+
 export const Cart = styled.div`
   position: absolute;
   z-index: 999;
