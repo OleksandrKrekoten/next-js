@@ -1,10 +1,10 @@
 import Link from "next/link.js";
-import { ContactForm } from "../ContactForm/ContactForm.jsx";
+import ContactForm from "../ContactForm/ContactForm.jsx";
 import { Container } from "@/components/Container";
 import {
-    Section,
-    Title,
-    Description,
+  Section,
+  Title,
+  Description,
   ContactWrapper,
   ContactInformation,
   ContactInformationItem,

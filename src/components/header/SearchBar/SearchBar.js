@@ -1,13 +1,13 @@
-import {  Field, Form } from "formik";
+import { Field, Form } from "formik";
 import styled from "@emotion/styled";
 
-export const FormContainer = styled(Form)`
+const FormContainer = styled(Form)`
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-left: 10px;
 `;
-export const Input = styled(Field)`
+const Input = styled(Field)`
   width: 80%;
   height: 40px;
   padding-left: 10px;
@@ -15,18 +15,18 @@ export const Input = styled(Field)`
   border-radius: 12px;
   border: 1px solid #cacdd8;
   color: #000;
- 
 `;
 
-export const SubmitBtn = styled.button`
+const SubmitBtn = styled.button`
   color: #000;
   font-size: 19px;
   background-color: transparent;
   border: none;
-  margin:0 10px;
+  margin: 0 10px;
   transition: color ease-out 400ms;
   :hover,
   :focus {
     color: #0156ff;
   }
 `;
+export { SubmitBtn, Input, FormContainer };

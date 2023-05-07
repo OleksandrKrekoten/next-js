@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-export const NavList = styled.ul`
+const NavList = styled.ul`
   display: none;
-  
+
   align-items: center;
   margin: 0 10px;
   @media screen and (min-width: 860px) {
@@ -11,7 +11,7 @@ export const NavList = styled.ul`
     max-width: 140px;
     color: #000;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
     transition: color ease-out 400ms, border-color ease-out 400ms;
     :not(:last-child) {
       margin-right: 15px;
@@ -21,7 +21,6 @@ export const NavList = styled.ul`
       }
     }
     @media screen and (min-width: 1000px) {
-      font-size: 14px;
       :not(:last-child) {
         margin-right: 25px;
       }
@@ -44,3 +43,4 @@ export const NavList = styled.ul`
     }
   }
 `;
+export { NavList };

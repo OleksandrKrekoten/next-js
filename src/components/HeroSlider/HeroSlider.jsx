@@ -6,18 +6,17 @@ import {
   CustomArrowPrev,
   CustomArrowNext,
 } from "./HeroSlider.js";
-import {VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const images = [
-
-  {  path: "/hero/msi1.jpg", alt: "msi baner" },
-  {  path: "/hero/msi2.jpg", alt: "msi baner" },
-  {  path: "/hero/msi3.jpg", alt: "msi baner" },
+  { path: "/hero/msi1.jpg", alt: "msi baner" },
+  { path: "/hero/msi2.jpg", alt: "msi baner" },
+  { path: "/hero/msi3.jpg", alt: "msi baner" },
 ];
 
 const CustomPrevArrow = (props) => {
- const { className, style, onClick } = props;
+  const { className, style, onClick } = props;
   return (
     <CustomArrowPrev onClick={onClick}>
       <VscChevronLeft />
@@ -25,16 +24,14 @@ const CustomPrevArrow = (props) => {
   );
 };
 
-
 const CustomNextArrow = (props) => {
-    const { className, style, onClick } = props;
+  const { className, style, onClick } = props;
   return (
     <CustomArrowNext onClick={onClick}>
       <VscChevronRight />
     </CustomArrowNext>
   );
 };
-
 
 const HeroSlider = () => {
   const settings = {
@@ -45,8 +42,8 @@ const HeroSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    prevArrow:<CustomPrevArrow/>,
-    nextArrow:<CustomNextArrow/> ,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
   };
   return (
     <Container>

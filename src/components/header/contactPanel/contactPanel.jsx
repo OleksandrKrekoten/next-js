@@ -13,10 +13,13 @@ import {
   ScheduleWrapper,
   Description,
   HeaderContactPanel,
+  CloseBtn,
+  OpenScheduleBtn,
 } from "./ContactPanel.js";
 import { Container } from "../../Container.js";
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaLocationArrow } from "react-icons/fa";
+import { AiFillCloseCircle } from "react-icons/ai";
 import Link from "next/link.js";
 const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
   return (
@@ -24,12 +27,12 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
       <Container>
         <Wrapper>
           <div>
-            <button type="button" onClick={handleToggleSchedule}>
+            <OpenScheduleBtn type="button" onClick={handleToggleSchedule}>
               Mon-Thu:{" "}
               <span>
                 9:00 AM - 5:30 PM <AiOutlineDown />
               </span>
-            </button>
+            </OpenScheduleBtn>
           </div>
           <Description>
             Visit our showroom in 1234 Street Adress City Address, 1234{" "}
@@ -51,7 +54,10 @@ const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
             </ul>
           </ContactLink>
           <WorkScheduleBlock isOpenSchedule={isOpenSchedule}>
-            <Arrow> </Arrow>
+            <Arrow />
+            <CloseBtn type="button" onClick={handleToggleSchedule}>
+              <AiFillCloseCircle />
+            </CloseBtn>
             <ScheduleWrapper>
               <Icon>
                 <AiFillClockCircle />

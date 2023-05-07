@@ -1,15 +1,14 @@
 import styled from "@emotion/styled";
 
-
-export const HeaderWrapper = styled.div`
-position: relative;
+const HeaderWrapper = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
- padding: 10px 0;
+  padding: 10px 0;
 `;
-export const MobileMenuBtn = styled.button`
+const MobileMenuBtn = styled.button`
   color: #000;
   font-size: 30px;
   margin-left: 20px;
@@ -22,3 +21,4 @@ export const MobileMenuBtn = styled.button`
     display: none;
   }
 `;
+export { MobileMenuBtn, HeaderWrapper };

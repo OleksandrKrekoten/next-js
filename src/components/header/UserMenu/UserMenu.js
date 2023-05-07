@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
-export const UserWrapper = styled.div`
+const UserWrapper = styled.div`
   position: relative;
   display: flex;
 `;
 
-export const SearcList = styled.ul`
+const SearcList = styled.ul`
   display: flex;
   align-items: center;
 
@@ -36,7 +36,7 @@ export const SearcList = styled.ul`
   }
 `;
 
-export const UserList = styled.ul`
+const UserList = styled.ul`
   position: absolute;
   z-index: 999;
   display: ${(props) => (props.isOpenUserList ? "block" : "none")};
@@ -52,7 +52,7 @@ export const UserList = styled.ul`
   border-radius: 12px;
   border: 1px solid #808080;
 `;
-export const Arrow = styled.div`
+const Arrow = styled.div`
   position: absolute;
   border-style: solid;
   _border-style: dashed;
@@ -83,3 +83,19 @@ export const Arrow = styled.div`
     left: -8px;
   }
 `;
+
+const CloseBtn = styled.button`
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #000;
+  font-size: 20px;
+  padding: 10px;
+  transition: color ease-out 400ms;
+  :hover,
+  :focus {
+    color: #0156ff;
+  }
+`;
+
+export { Arrow, UserList, UserWrapper, SearcList, CloseBtn };

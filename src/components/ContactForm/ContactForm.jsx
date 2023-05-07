@@ -1,4 +1,4 @@
-import { Formik, } from "formik";
+import { Formik } from "formik";
 import {
   FormContainer,
   Input,
@@ -8,14 +8,15 @@ import {
   FlexWrapper,
   SubmitBtn,
 } from "./ContactForm.js";
-export const ContactForm = () => {
+
+const ContactForm = () => {
   return (
     <Formik
       initialValues={{
         name: "",
         email: "",
         phone: "",
-        message:"",
+        message: "",
       }}
       onSubmit={async (values) => {
         console.log(values);
@@ -55,3 +56,4 @@ export const ContactForm = () => {
     </Formik>
   );
 };
+export default ContactForm;

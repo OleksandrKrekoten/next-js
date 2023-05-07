@@ -22,24 +22,14 @@ export const navLinks = [
     path: "printers-scanners",
   },
   {
-    name: "PC Parts",
-    id: "PCParts",
-    path: "pc-parts",
+    name: "Gaming Monitors",
+    id: "GamingMonitors",
+    path: "gaming-monitors",
   },
   {
-    name: "All Other Products",
-    id: "AllOtherProducts",
-    path: "all-other-products",
-  },
-  {
-    name: "Repairs",
-    id: "Repairs",
-    path: "repairs",
-  },
-  {
-    name: "Our Deals",
-    id: "OurDeals",
-    path: "our-deals",
+    name: "About",
+    id: "About",
+    path: "about",
   },
 ];
 export const UserLinks = [

@@ -1,8 +1,14 @@
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { UserWrapper, SearcList, UserList, Arrow } from "./UserMenu.js";
+import {
+  UserWrapper,
+  SearcList,
+  UserList,
+  Arrow,
+  CloseBtn,
+} from "./UserMenu.js";
 import Image from "next/image.js";
-import  Minicart  from "../Minicart/Minicart.jsx";
+import Minicart from "../Minicart/Minicart.jsx";
 import { UserLinks } from "../../../constants/index.js";
 import Link from "next/link.js";
 
@@ -40,6 +46,9 @@ const UserMenu = ({
       <Minicart handleToggleCart={handleToggleCart} isOpenCart={isOpenCart} />
       <UserList isOpenUserList={isOpenUserList}>
         <Arrow />
+        <CloseBtn type="button" onClick={handleToggleUserList}>
+          <AiFillCloseCircle />
+        </CloseBtn>
         {UserLinks &&
           UserLinks.map(({ name, id, path }) => {
             return (

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const MobileNav = styled.div`
+const MobileNav = styled.div`
   position: fixed;
   z-index: 999;
 
@@ -18,7 +18,7 @@ export const MobileNav = styled.div`
   transform: ${({ isOpenMobileMenu }) =>
     isOpenMobileMenu ? "translateX(0)" : "translateX(100%)"};
 `;
-export const MobileNavList = styled.ul`
+const MobileNavList = styled.ul`
   li {
     padding: 10px;
     transition: color ease-out 400ms;
@@ -32,7 +32,7 @@ export const MobileNavList = styled.ul`
   }
 `;
 
-export const CloseModalBtn = styled.button`
+const CloseModalBtn = styled.button`
   position: absolute;
   top: 30px;
   right: 30px;
@@ -44,3 +44,4 @@ export const CloseModalBtn = styled.button`
     color: #0156ff;
   }
 `;
+export { CloseModalBtn, MobileNavList, MobileNav };

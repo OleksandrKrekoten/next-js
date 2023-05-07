@@ -8,7 +8,7 @@ import SearchBar from "./SearchBar/SearchBar.jsx";
 import { HeaderWrapper, MobileMenuBtn } from "./header.js";
 import { useState } from "react";
 import { Container } from "../Container.js";
-import Portal from '../Portal.jsx'
+import Portal from "../Portal.jsx";
 import { TfiMenu } from "react-icons/tfi";
 
 const Header = () => {
@@ -16,18 +16,18 @@ const Header = () => {
   const [isOpenCart, setIsOpenCart] = useState(false);
   const [isOpenUserList, setIsOpenUserList] = useState(false);
   const [isOpenSearchBar, setIsOpenSearchBar] = useState(false);
-  const [isOpenMobileMenu,setIsOpenMobileMenu] =useState(false)
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
   const handleToggleMobileMenu = () => {
-     if (isOpenSchedule) {
-       setIsOpenSchedule(false);
-     } else if (isOpenCart) {
-       setIsOpenCart(false);
-     } else if (isOpenUserList) {
-       setIsOpenUserList(false);
-     }
-  setIsOpenMobileMenu(!isOpenMobileMenu);
-} 
+    if (isOpenSchedule) {
+      setIsOpenSchedule(false);
+    } else if (isOpenCart) {
+      setIsOpenCart(false);
+    } else if (isOpenUserList) {
+      setIsOpenUserList(false);
+    }
+    setIsOpenMobileMenu(!isOpenMobileMenu);
+  };
   const handleToggleSearchBar = () => {
     if (isOpenSchedule) {
       setIsOpenSchedule(false);

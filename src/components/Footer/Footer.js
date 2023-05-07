@@ -1,12 +1,11 @@
 import styled from "@emotion/styled";
 import { Field, Form } from "formik";
 
-
-export const FooterSuport = styled.div`
+const FooterSuport = styled.div`
   background-color: #fff;
   color: #000;
 `;
-export const SuportList = styled.ul` 
+const SuportList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +15,7 @@ export const SuportList = styled.ul`
     flex-direction: row;
   }
 `;
-export const SuportItem = styled.li`
+const SuportItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +42,7 @@ export const SuportItem = styled.li`
     opacity: 0.7;
   }
 `;
-export const SuportIcon = styled.div`
+const SuportIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,37 +54,37 @@ export const SuportIcon = styled.div`
   margin-bottom: 24px;
 `;
 
-export const FooterWrapper = styled.div`
+const FooterWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 0;
   color: #fff;
 `;
-export const FooterBackground = styled.div`
+const FooterBackground = styled.div`
   background-color: #020202;
 `;
-export const FooterTitle = styled.h2`
+const FooterTitle = styled.h2`
   font-weight: 500;
   font-size: 38px;
   line-height: 1.3;
   color: #ffffff;
   margin-bottom: 10px;
 `;
-export const FooterSubtitle = styled.p`
+const FooterSubtitle = styled.p`
   font-weight: 300;
   font-size: 16px;
   line-height: 1.3;
   color: #ffffff;
 `;
-export const FooterForm = styled(Form)`
+const FooterForm = styled(Form)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 `;
-export const Input = styled(Field)`
+const Input = styled(Field)`
   width: 90%;
   height: 50px;
   background: transparent;
@@ -107,7 +106,7 @@ export const Input = styled(Field)`
     margin-top: 0;
   }
 `;
-export const SubmitBtn = styled.button`
+const SubmitBtn = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +127,7 @@ export const SubmitBtn = styled.button`
     margin-top: 0;
   }
 `;
-export const FooterPaymentInfo = styled.div`
+const FooterPaymentInfo = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -145,11 +144,27 @@ export const FooterPaymentInfo = styled.div`
     opacity: 0.6;
   }
 `;
-export const SocialLink = styled.ul`
+const SocialLink = styled.ul`
   display: flex;
   font-size: 22px;
   color: #fff;
 `;
-export const PaymentList = styled.ul`
+const PaymentList = styled.ul`
   display: flex;
 `;
+export {
+  PaymentList,
+  SocialLink,
+  FooterPaymentInfo,
+  SubmitBtn,
+  Input,
+  FooterForm,
+  FooterSubtitle,
+  FooterTitle,
+  FooterBackground,
+  FooterWrapper,
+  SuportIcon,
+  SuportItem,
+  SuportList,
+  FooterSuport,
+};

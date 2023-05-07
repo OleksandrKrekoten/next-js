@@ -1,15 +1,14 @@
 import styled from "@emotion/styled";
 
-export const Hero = styled.section`
-padding-bottom: 30px;
+const Hero = styled.section`
+  padding-bottom: 30px;
+`;
 
-` 
-
-export const SliderItem = styled.img`
-width: 100%;
-position: relative;
-`
-export const CustomArrowPrev = styled.div`
+const SliderItem = styled.img`
+  width: 100%;
+  position: relative;
+`;
+const CustomArrowPrev = styled.div`
   position: absolute;
   display: none;
   z-index: 999;
@@ -25,7 +24,7 @@ export const CustomArrowPrev = styled.div`
     display: block;
   }
 `;
-export const CustomArrowNext = styled.div`
+const CustomArrowNext = styled.div`
   position: absolute;
   display: none;
   z-index: 999;
@@ -41,3 +40,4 @@ export const CustomArrowNext = styled.div`
     display: block;
   }
 `;
+export { CustomArrowNext, CustomArrowPrev, SliderItem, Hero };

@@ -1,42 +1,43 @@
 import styled from "@emotion/styled";
 
-export const HeaderContactPanel = styled.div`
+const HeaderContactPanel = styled.div`
   background-color: #020202;
 `;
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   height: 44px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
   color: #acacac;
-
-  button {
-    border: none;
-    background-color: transparent;
-    color: #a2a6b0;
-    cursor: pointer;
-    transition: color ease-out 400ms;
-    span {
-      color: #fff;
-      transition: color ease-out 400ms;
-      :focus,
-      :hover {
-        color: #0156ff;
-      }
-    }
-  }
   a {
     color: #fff;
     text-decoration: underline;
   }
 `;
-export const ContactLink = styled.div`
+
+const OpenScheduleBtn = styled.button`
+  border: none;
+  background-color: transparent;
+  color: #a2a6b0;
+  cursor: pointer;
+  transition: color ease-out 400ms;
+  span {
+    color: #fff;
+    transition: color ease-out 400ms;
+    :focus,
+    :hover {
+      color: #0156ff;
+    }
+  }
+`;
+
+const ContactLink = styled.div`
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -45,9 +46,8 @@ export const ContactLink = styled.div`
     display: none;
     margin-right: 14px;
     @media screen and (min-width: 500px) {
-     display: block;
+      display: block;
     }
-   
   }
   ul {
     display: flex;
@@ -66,15 +66,14 @@ export const ContactLink = styled.div`
     }
   }
 `;
-export const Description = styled.p`
+const Description = styled.p`
   display: none;
   @media screen and (min-width: 840px) {
     display: block;
     font-size: 12px;
   }
- 
 `;
-export const WorkScheduleBlock = styled.div`
+const WorkScheduleBlock = styled.div`
   position: absolute;
   z-index: 999;
   display: ${(props) => (props.isOpenSchedule ? "blocl" : "none")};
@@ -89,19 +88,19 @@ export const WorkScheduleBlock = styled.div`
   transition: opacity 400 ease-in;
   color: #000;
 `;
-export const ScheduleWrapper = styled.div`
+const ScheduleWrapper = styled.div`
   :not(:last-child) {
     display: flex;
     padding: 10px 0;
     border-bottom: 1px solid #cacdd8;
   }
 `;
-export const Icon = styled.div`
+const Icon = styled.div`
   font-size: 35px;
   margin-right: 10px;
   color: #0156ff;
 `;
-export const ContactWrapper = styled.div`
+const ContactWrapper = styled.div`
   padding-top: 11px;
   padding-left: 11px;
   font-weight: 400;
@@ -115,7 +114,7 @@ export const ContactWrapper = styled.div`
     color: #0156ff;
   }
 `;
-export const Arrow = styled.div`
+const Arrow = styled.div`
   position: absolute;
   border-style: solid;
   _border-style: dashed;
@@ -146,3 +145,29 @@ export const Arrow = styled.div`
     left: -8px;
   }
 `;
+const CloseBtn = styled.button`
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #000;
+  font-size: 20px;
+  padding: 10px;
+  transition: color ease-out 400ms;
+  :hover,
+  :focus {
+    color: #0156ff;
+  }
+`;
+export {
+  CloseBtn,
+  Arrow,
+  ContactWrapper,
+  Icon,
+  ScheduleWrapper,
+  WorkScheduleBlock,
+  Description,
+  ContactLink,
+  Wrapper,
+  HeaderContactPanel,
+  OpenScheduleBtn,
+};

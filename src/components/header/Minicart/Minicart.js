@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
 
-export const CloseBtn = styled.button`
+const CloseBtn = styled.button`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   color: #000;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   transition: color ease-out 400ms;
   :hover,
   :focus {
@@ -15,7 +15,7 @@ export const CloseBtn = styled.button`
   }
 `;
 
-export const Cart = styled.div`
+const Cart = styled.div`
   position: absolute;
   z-index: 999;
   display: ${(props) => (props.isOpenCart ? "flex" : "none")};
@@ -35,18 +35,18 @@ export const Cart = styled.div`
   border: 1px solid #808080;
   border-radius: 12px;
 `;
-export const CartTitle = styled.h2`
+const CartTitle = styled.h2`
   font-weight: 600;
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 6px;
 `;
-export const CartSubtitle = styled.p`
+const CartSubtitle = styled.p`
   font-size: 12px;
   color: #a2a6b0;
   margin-bottom: 16px;
 `;
-export const LinkToCart = styled(Link)`
+const LinkToCart = styled(Link)`
   padding: 8px 20px;
   font-weight: 600;
   font-size: 14px;
@@ -55,7 +55,7 @@ export const LinkToCart = styled(Link)`
   border-radius: 50px;
   margin-bottom: 20px;
 `;
-export const CartList = styled.ul`
+const CartList = styled.ul`
   height: 208px;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -96,7 +96,7 @@ export const CartList = styled.ul`
     background-color: #bbb;
   }
 `;
-export const CartItem = styled.li`
+const CartItem = styled.li`
   display: flex;
   align-items: center;
   padding: 15px 20px;
@@ -114,7 +114,7 @@ export const CartItem = styled.li`
     font-weight: 400;
   }
 `;
-export const CartSum = styled.p`
+const CartSum = styled.p`
   font-weight: 600;
   font-size: 14px;
   color: #a2a6b0;
@@ -124,7 +124,7 @@ export const CartSum = styled.p`
     color: #000;
   }
 `;
-export const LinkToCheckout = styled(Link)`
+const LinkToCheckout = styled(Link)`
   display: block;
   text-align: center;
   padding: 8px 20px;
@@ -136,7 +136,7 @@ export const LinkToCheckout = styled(Link)`
   border-radius: 50px;
   margin-bottom: 5px;
 `;
-export const LinkToPayPal = styled(Link)`
+const LinkToPayPal = styled(Link)`
   display: block;
   text-align: center;
   padding: 8px 20px;
@@ -147,7 +147,7 @@ export const LinkToPayPal = styled(Link)`
   color: #000000;
   border-radius: 50px;
 `;
-export const Arrow = styled.div`
+const Arrow = styled.div`
   position: absolute;
   border-style: solid;
   _border-style: dashed;
@@ -178,3 +178,16 @@ export const Arrow = styled.div`
     left: -8px;
   }
 `;
+export {
+  Arrow,
+  LinkToPayPal,
+  LinkToCheckout,
+  CartSum,
+  CartItem,
+  CartList,
+  LinkToCart,
+  CartSubtitle,
+  CartTitle,
+  Cart,
+  CloseBtn,
+};
