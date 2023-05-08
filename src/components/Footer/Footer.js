@@ -4,6 +4,7 @@ import { Field, Form } from "formik";
 const FooterSuport = styled.div`
   background-color: #fff;
   color: #000;
+  padding: 60px 0;
 `;
 const SuportList = styled.ul`
   display: flex;
