@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks } from "../../../constants";
+import { navLinks } from "../../constants";
 import { MobileNav, MobileNavList, CloseModalBtn } from "./MobileMenu.js";
 import { AiFillCloseCircle } from "react-icons/ai";
 const MobileMenu = ({ handleToggleMobileMenu, isOpenMobileMenu }) => {

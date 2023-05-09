@@ -67,10 +67,9 @@ const ItemDescription = styled.p`
   font-size: 18px;
 `;
 const AboutUsImage = styled(Image)`
-  width: 302px;
-  height: auto;
-  @media screen and (min-width: 780px) {
-    width: 402px;
+  @media screen and (max-width: 780px) {
+    width: 90%;
+    height: auto;
   }
 `;
 export {

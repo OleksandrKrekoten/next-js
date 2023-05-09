@@ -1,10 +1,10 @@
 import Image from "next/image.js";
 import Link from "next/link.js";
-import ContactPanel from "./ContactPanel/ContactPanel.jsx";
-import MobileMenu from "./MobileMenu/MobileMenu.jsx";
-import UserMenu from "./UserMenu/UserMenu.jsx";
-import Navigation from "./Navigation/Navigation.jsx";
-import SearchBar from "./SearchBar/SearchBar.jsx";
+import ContactPanel from "../ContactPanel/ContactPanel.jsx";
+import MobileMenu from "../MobileMenu/MobileMenu.jsx";
+import UserMenu from "../UserMenu/UserMenu.jsx";
+import Navigation from "../Navigation/Navigation.jsx";
+import SearchBar from "../SearchBar/SearchBar.jsx";
 import { HeaderWrapper, MobileMenuBtn } from "./header.js";
 import { useState } from "react";
 import { Container } from "../Container.js";
@@ -87,7 +87,7 @@ const Header = () => {
                 alt="Logo"
                 width={34}
                 height={40}
-                priority={true}
+                
               />
             </Link>
             <MobileMenuBtn type="button" onClick={handleToggleMobileMenu}>

@@ -9,7 +9,7 @@ import {
 } from "./UserMenu.js";
 import Image from "next/image.js";
 import Minicart from "../Minicart/Minicart.jsx";
-import { UserLinks } from "../../../constants/index.js";
+import { UserLinks } from "../../constants/index.js";
 import Link from "next/link.js";
 
 const UserMenu = ({
@@ -40,7 +40,7 @@ const UserMenu = ({
           alt="user photo"
           width={36}
           height={36}
-          priority={true}
+        
         />
       </div>
       <Minicart handleToggleCart={handleToggleCart} isOpenCart={isOpenCart} />

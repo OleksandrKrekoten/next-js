@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+
 const NavList = styled.ul`
   display: none;
 
@@ -8,7 +9,6 @@ const NavList = styled.ul`
     display: flex;
   }
   li {
-    max-width: 140px;
     color: #000;
     font-weight: 600;
     font-size: 14px;
@@ -26,19 +26,21 @@ const NavList = styled.ul`
       }
     }
     :last-child {
-      color: #0156ff;
-      padding: 8px 16px;
-      text-align: center;
-      border: 2px solid #0156ff;
-      border-radius: 50px;
+      a {
+        color: #0156ff;
+        padding: 8px 16px;
+        text-align: center;
+        border: 2px solid #0156ff;
+        border-radius: 50px;
 
-      @media screen and (min-width: 1350px) {
-        padding: 8px 26px;
-      }
-      :focus,
-      :hover {
-        color: #000;
-        border-color: #000;
+        @media screen and (min-width: 1350px) {
+          padding: 8px 26px;
+        }
+        :focus,
+        :hover {
+          color: #000;
+          border-color: #000;
+        }
       }
     }
   }

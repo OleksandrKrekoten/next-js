@@ -16,7 +16,7 @@ import {
   CloseBtn,
   OpenScheduleBtn,
 } from "./ContactPanel.js";
-import { Container } from "../../Container.js";
+import { Container } from "../Container.js";
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaLocationArrow } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";

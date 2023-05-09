@@ -34,9 +34,10 @@ const AboutUs = () => {
                   <AboutUsImage
                     src={image}
                     alt="Photo computer"
-                    width={402}
-                    height={215}
-                    priority={true}
+                    width={410}
+                    height={260}
+                   
+                   
                   />
                 </AboutUsItem>
               );
