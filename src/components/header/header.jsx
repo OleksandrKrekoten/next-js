@@ -82,13 +82,7 @@ const Header = () => {
           <div style={{ display: "flex" }}>
             {" "}
             <Link href="/">
-              <Image
-                src="/Logo.svg"
-                alt="Logo"
-                width={34}
-                height={40}
-                
-              />
+              <Image src="/Logo.svg" alt="Logo" width={34} height={40} />
             </Link>
             <MobileMenuBtn type="button" onClick={handleToggleMobileMenu}>
               <TfiMenu />
