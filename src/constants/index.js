@@ -60,7 +60,7 @@ export const UserLinks = [
   {
     name: "Create an Account",
     id: idGenerator++,
-    path: "register",
+    path: "registration",
   },
   {
     name: "Sign In",
