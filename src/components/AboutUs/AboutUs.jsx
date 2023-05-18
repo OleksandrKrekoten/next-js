@@ -1,6 +1,6 @@
 import { AboutContent } from "@/constants";
 import { Container } from "../Container";
-import Image from "next/image";
+
 import {
   Title,
   AboutUsItem,

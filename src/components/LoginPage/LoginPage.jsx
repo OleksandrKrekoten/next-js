@@ -1,7 +1,16 @@
-import Link from "next/link";
+
 import { Container } from "../Container";
 import LoginForm from "../LoginForm/LoginForm.jsx";
-import {Title,LoginWrapper} from "./LoginPage.js"
+import {
+  Title,
+  LoginWrapper,
+  SubTitle,
+  SubText,
+  LoginDescriptionWrapper,
+  LoginDescriptionTitle,
+  LoginDescriptionText,
+  LinkToRegister,
+} from "./LoginPage.js";
 const LoginPage = () => {
   return (
     <Container>
@@ -9,20 +18,26 @@ const LoginPage = () => {
         <Title>Customer Login</Title>
         <LoginWrapper>
           <div>
-            <h3>Registered Customers</h3>
-            <p>If you have an account, sign in with your email address.</p>
+            <SubTitle>Registered Customers</SubTitle>
+            <SubText>
+              If you have an account, sign in with your email address.
+            </SubText>
             <LoginForm />
           </div>
-          <div>
-            <h3>New Customer?</h3>
-            <p>Creating an account has many benefits:</p>
+          <LoginDescriptionWrapper>
+            <LoginDescriptionTitle>New Customer?</LoginDescriptionTitle>
+            <LoginDescriptionText>
+              Creating an account has many benefits:
+            </LoginDescriptionText>
             <ul style={{ listStyle: "inside" }}>
               <li>Check out faster</li>
               <li>Keep more than one address</li>
               <li>Track orders and more</li>
             </ul>
-            <Link href="/registration">Create An Account</Link>
-          </div>
+            <LinkToRegister href="/registration">
+              Create An Account
+            </LinkToRegister>
+          </LoginDescriptionWrapper>
         </LoginWrapper>
       </section>
     </Container>
