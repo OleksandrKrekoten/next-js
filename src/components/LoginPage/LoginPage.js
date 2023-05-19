@@ -20,7 +20,7 @@ const SubText = styled.p`
 const LoginWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   @media screen and (min-width: 768px) {
     flex-direction: row;
