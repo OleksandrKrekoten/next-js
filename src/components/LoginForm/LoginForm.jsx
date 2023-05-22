@@ -1,5 +1,6 @@
 import { Formik, } from "formik";
-import { FormContainer, Label, Input, SubmitBtn } from "./LoginForm.js";
+import { FormContainer, Label, Input } from "./LoginForm.js";
+import Button from "../Button/Button.jsx"
 const LoginForm = () => {
   return (
     <Formik
@@ -15,7 +16,7 @@ const LoginForm = () => {
           Password <span>*</span>
         </Label>
         <Input type="password" name="password" placeholder="Your Password" />
-        <SubmitBtn type="submit">Sign In</SubmitBtn>
+        <Button type="submit">Sign In</Button>
       </FormContainer>
     </Formik>
   );

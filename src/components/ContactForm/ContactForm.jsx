@@ -6,9 +6,8 @@ import {
   Textarea,
   Label,
   FlexWrapper,
-  SubmitBtn,
 } from "./ContactForm.js";
-
+import Button from "../Button/Button.jsx";
 const ContactForm = () => {
   return (
     <Formik
@@ -51,7 +50,7 @@ const ContactForm = () => {
             placeholder="Jot us a note and we’ll get back to you as quickly as possible"
           />
         </InputWrapper>
-        <SubmitBtn type="submit">Submit</SubmitBtn>
+        <Button type="submit">Submit</Button>
       </FormContainer>
     </Formik>
   );

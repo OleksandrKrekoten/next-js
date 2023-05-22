@@ -3,13 +3,13 @@ import ContactForm from "../ContactForm/ContactForm.jsx";
 import { Container } from "@/components/Container";
 import {
   Section,
-  Title,
   Description,
   ContactWrapper,
   ContactInformation,
   ContactInformationItem,
   ContactInformationSubTitle,
 } from "./ContactUs.js";
+import Title from "../Title/Title.jsx";
 const ContactUs = () => {
   return (
     <Container>

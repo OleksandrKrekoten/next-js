@@ -1,11 +1,6 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
-const Title = styled.h2`
-  font-weight: 600;
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #000000;
-`;
+
 const SubTitle = styled.h3`
   font-weight: 600;
   font-size: 16px;
@@ -42,19 +37,20 @@ const LoginDescriptionText = styled.div`
   margin-bottom: 12px;
 `;
 const LinkToRegister = styled(Link)`
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   width: 208px;
   height: 50px;
-  padding: 10px;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
   background: #0156ff;
   border-radius: 50px;
- margin-top: 30px;
+  margin-top: 30px;
 `;
 export {
-  Title,
   LoginWrapper,
   SubTitle,
   SubText,

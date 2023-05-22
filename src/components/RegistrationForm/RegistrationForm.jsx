@@ -3,10 +3,10 @@ import {
   FormContainer,
   Label,
   Input,
-  SubmitBtn,
   InputWrapper,
   InputContainer,
 } from "./RegistrationForm.js";
+import Button from "../Button/Button.jsx";
 const RegistrationForm = () => {
   return (
     <Formik
@@ -60,7 +60,7 @@ const RegistrationForm = () => {
             />
           </InputWrapper>
         </InputContainer>
-        <SubmitBtn type="submit">Create An Account</SubmitBtn>
+        <Button type="submit">Create An Account</Button>
       </FormContainer>
     </Formik>
   );

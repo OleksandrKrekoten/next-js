@@ -127,7 +127,7 @@ const CartSum = styled.p`
 const LinkToCheckout = styled(Link)`
   display: block;
   text-align: center;
-  padding: 8px 20px;
+  padding: 15px 30px;
   min-width: 250px;
   font-weight: 600;
   font-size: 14px;
@@ -139,7 +139,7 @@ const LinkToCheckout = styled(Link)`
 const LinkToPayPal = styled(Link)`
   display: block;
   text-align: center;
-  padding: 8px 20px;
+  padding: 15px 30px;
   min-width: 250px;
   font-weight: 600;
   font-size: 14px;

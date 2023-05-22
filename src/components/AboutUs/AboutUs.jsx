@@ -2,7 +2,6 @@ import { AboutContent } from "@/constants";
 import { Container } from "../Container";
 
 import {
-  Title,
   AboutUsItem,
   TextBox,
     ItemTitle,
@@ -11,7 +10,7 @@ import {
   AboutUsImage,
   TitleIcon,
 } from "./AboutUs.styled.js";
-
+import Title  from "../Title/Title.jsx";
 const AboutUs = () => {
     
   return (

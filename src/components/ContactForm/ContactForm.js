@@ -50,21 +50,5 @@ const Label = styled.label`
     color: #c94d3f;
   }
 `;
-const SubmitBtn = styled.button`
-  color: #fff;
-  width: 151px;
-  height: 50px;
-  padding: 10px;
-  background: #0156ff;
-  border-radius: 50px;
-`;
-export {
 
-  FormContainer,
-  SubmitBtn,
-  Label,
-  Textarea,
-  Input,
-  InputWrapper,
-  FlexWrapper,
-};
+export { FormContainer, Label, Textarea, Input, InputWrapper, FlexWrapper };

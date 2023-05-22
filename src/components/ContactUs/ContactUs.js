@@ -7,12 +7,6 @@ const Section = styled.section`
   }
 `;
 
-const Title = styled.h2`
-  font-weight: 600;
-  font-size: 32px;
-  color: #000000;
-  margin-bottom: 12px;
-`;
 const Description = styled.p`
   font-weight: 300;
   font-size: 16px;
@@ -56,6 +50,5 @@ export {
   ContactInformation,
   ContactWrapper,
   Description,
-  Title,
   Section,
 };

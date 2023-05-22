@@ -21,6 +21,7 @@ import {
 import Link from "next/link.js";
 import Image from "next/image.js";
 import { Container } from "../Container.js";
+import Button from "../Button/Button.jsx";
 const Footer = () => {
   return (
     <footer>
@@ -55,7 +56,7 @@ const Footer = () => {
               >
                 <FooterForm>
                   <Input name="email" type="email" placeholder="Your Email" />
-                  <SubmitBtn type="submit">Subscribe</SubmitBtn>
+                  <Button type="submit">Subscribe</Button>
                 </FooterForm>
               </Formik>
             </div>

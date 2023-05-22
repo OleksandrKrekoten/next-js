@@ -26,12 +26,5 @@ max-width: 580px;
   padding-left: 15px;
   color: #000;
 `;
-const SubmitBtn = styled.button`
-  color: #fff;
-  width: 151px;
-  height: 50px;
-  padding: 10px;
-  background: #0156ff;
-  border-radius: 50px;
-`;
-export { FormContainer, Label, Input, SubmitBtn };
+
+export { FormContainer, Label, Input };

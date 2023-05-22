@@ -33,14 +33,7 @@ const Input = styled(Field)`
     width: 580px;
   }
 `;
-const SubmitBtn = styled.button`
-  color: #fff;
-  width: 151px;
-  height: 50px;
-  padding: 10px;
-  background: #0156ff;
-  border-radius: 50px;
-`;
+
 const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,4 +46,4 @@ const InputContainer = styled.div`
   flex-wrap: wrap;
   margin: 12px;
 `;
-export { FormContainer, Label, Input, SubmitBtn, InputWrapper, InputContainer };
+export { FormContainer, Label, Input,  InputWrapper, InputContainer };

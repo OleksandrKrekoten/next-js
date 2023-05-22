@@ -1,11 +1,6 @@
 import Image from "next/image";
 import styled from "@emotion/styled";
-const Title = styled.h2`
-  font-weight: 600;
-  font-size: 32px;
-  color: #000000;
-  margin-bottom: 20px;
-`;
+
 const AboutUsItem = styled.li`
   display: flex;
   padding: 40px;
@@ -73,7 +68,6 @@ const AboutUsImage = styled(Image)`
   }
 `;
 export {
-  Title,
   AboutUsItem,
   TitleWrap,
   TextBox,

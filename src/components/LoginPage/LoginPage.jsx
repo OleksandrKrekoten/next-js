@@ -2,7 +2,6 @@
 import { Container } from "../Container";
 import LoginForm from "../LoginForm/LoginForm.jsx";
 import {
-  Title,
   LoginWrapper,
   SubTitle,
   SubText,
@@ -11,6 +10,7 @@ import {
   LoginDescriptionText,
   LinkToRegister,
 } from "./LoginPage.js";
+import Title from "../Title/Title.jsx";
 const LoginPage = () => {
   return (
     <Container>
