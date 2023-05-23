@@ -1,37 +1,11 @@
 import Slider from "react-slick";
+import CustomPrevArrow from "../CustomPrevArrow/CustomPrevArrow.jsx";
+import CustomNextArrow from "../CustomNextArrow/CustomNextArrow.jsx";
+import { ImagesSlider } from "../../constants/index.js";
 import { Container } from "../Container";
-import {
-  SliderItem,
-  Hero,
-  CustomArrowPrev,
-  CustomArrowNext,
-} from "./HeroSlider.js";
-import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+import { SliderItem, Hero } from "./HeroSlider.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const images = [
-  { path: "/hero/msi1.jpg", alt: "msi baner" },
-  { path: "/hero/msi2.jpg", alt: "msi baner" },
-  { path: "/hero/msi3.jpg", alt: "msi baner" },
-];
-
-const CustomPrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <CustomArrowPrev onClick={onClick}>
-      <VscChevronLeft />
-    </CustomArrowPrev>
-  );
-};
-
-const CustomNextArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <CustomArrowNext onClick={onClick}>
-      <VscChevronRight />
-    </CustomArrowNext>
-  );
-};
 
 const HeroSlider = () => {
   const settings = {
@@ -49,8 +23,8 @@ const HeroSlider = () => {
     <Container>
       <Hero>
         <Slider {...settings}>
-          {images &&
-            images.map(({ path, alt }) => {
+          {ImagesSlider &&
+            ImagesSlider.map(({ path, alt }) => {
               return (
                 <div key={path}>
                   <SliderItem src={path} alt={alt} />

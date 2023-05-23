@@ -50,7 +50,7 @@ const TitleIcon = styled.span`
   align-items: center;
   justify-content: center;
   background-color: #0156ff;
-  
+
   margin-right: 15px;
   border-radius: 36% 36% 0% 36% / 36% 36% 0% 36%;
 `;

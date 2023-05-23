@@ -155,3 +155,8 @@ export const AboutContent = [
     image: "/about/about5.png",
   },
 ];
+ export const ImagesSlider = [
+  { path: "/hero/msi1.jpg", alt: "msi baner" },
+  { path: "/hero/msi2.jpg", alt: "msi baner" },
+  { path: "/hero/msi3.jpg", alt: "msi baner" },
+];
