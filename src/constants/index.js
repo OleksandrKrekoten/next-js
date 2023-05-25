@@ -160,3 +160,20 @@ export const AboutContent = [
   { path: "/hero/msi2.jpg", alt: "msi baner" },
   { path: "/hero/msi3.jpg", alt: "msi baner" },
 ];
+export const WorkScheduleData = [
+  {
+    id: idGenerator++,
+    day: "Mon-Thu:",
+    hourWork: "9:00 AM - 5:30 PM",
+  },
+  {
+    id: idGenerator++,
+    day: "Fr:",
+    hourWork: "9:00 AM - 6:00 PM",
+  },
+  {
+    id: idGenerator++,
+    day: " Sat:",
+    hourWork: "11:00 AM - 5:00 PM",
+  },
+];

@@ -3,7 +3,7 @@ import Link from "next/link.js";
 import ContactPanel from "../ContactPanel/ContactPanel.jsx";
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import UserMenu from "../UserMenu/UserMenu.jsx";
-import Navigation from "../Navigation/Navigation.jsx";
+import NavigationCategories from "../NavigationCategories/NavigationCategories.jsx";
 import SearchBar from "../SearchBar/SearchBar.jsx";
 import { HeaderWrapper, MobileMenuBtn } from "./header.js";
 import { useState } from "react";
@@ -19,57 +19,37 @@ const Header = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
   const handleToggleMobileMenu = () => {
-    if (isOpenSchedule) {
-      setIsOpenSchedule(false);
-    } else if (isOpenCart) {
-      setIsOpenCart(false);
-    } else if (isOpenUserList) {
-      setIsOpenUserList(false);
-    }
     setIsOpenMobileMenu(!isOpenMobileMenu);
+    setIsOpenSchedule(false);
+    setIsOpenCart(false);
+    setIsOpenUserList(false);
   };
   const handleToggleSearchBar = () => {
-    if (isOpenSchedule) {
-      setIsOpenSchedule(false);
-    } else if (isOpenCart) {
-      setIsOpenCart(false);
-    } else if (isOpenUserList) {
-      setIsOpenUserList(false);
-    }
     setIsOpenSearchBar(!isOpenSearchBar);
+    setIsOpenCart(false);
+    setIsOpenSchedule(false);
+    setIsOpenUserList(false);
   };
 
   const handleToggleUserList = () => {
-    if (isOpenSchedule) {
-      setIsOpenSchedule(false);
-    } else if (isOpenCart) {
-      setIsOpenCart(false);
-    } else if (isOpenSearchBar) {
-      setIsOpenSearchBar(false);
-    }
     setIsOpenUserList(!isOpenUserList);
+    setIsOpenSchedule(false);
+    setIsOpenCart(false);
+    setIsOpenSearchBar(false);
   };
 
   const handleToggleSchedule = () => {
-    if (isOpenCart) {
-      setIsOpenCart(false);
-    } else if (isOpenUserList) {
-      setIsOpenUserList(false);
-    } else if (isOpenSearchBar) {
-      setIsOpenSearchBar(false);
-    }
+    setIsOpenSearchBar(false);
+    setIsOpenCart(false);
+    setIsOpenUserList(false);
     setIsOpenSchedule(!isOpenSchedule);
   };
 
   const handleToggleCart = () => {
-    if (isOpenSchedule) {
-      setIsOpenSchedule(false);
-    } else if (isOpenUserList) {
-      setIsOpenUserList(false);
-    } else if (isOpenSearchBar) {
-      setIsOpenSearchBar(false);
-    }
     setIsOpenCart(!isOpenCart);
+    setIsOpenSchedule(false);
+    setIsOpenUserList(false);
+    setIsOpenSearchBar(false);
   };
   return (
     <header>
@@ -79,8 +59,7 @@ const Header = () => {
       />
       <Container>
         <HeaderWrapper>
-          <div style={{ display: "flex" }}>
-            {" "}
+          <div>
             <Link href="/">
               <Image src="/Logo.svg" alt="Logo" width={34} height={40} />
             </Link>
@@ -88,7 +67,7 @@ const Header = () => {
               <TfiMenu />
             </MobileMenuBtn>
           </div>
-          {isOpenSearchBar ? <SearchBar /> : <Navigation />}
+          {isOpenSearchBar ? <SearchBar /> : <NavigationCategories />}
           <UserMenu
             handleToggleCart={handleToggleCart}
             isOpenCart={isOpenCart}

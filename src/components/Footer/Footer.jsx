@@ -22,6 +22,7 @@ import Link from "next/link.js";
 import Image from "next/image.js";
 import { Container } from "../Container.js";
 import Button from "../Button/Button.jsx";
+import SocialNetworksList from "../SocialNetworksList/SocialNetworksList.jsx";
 const Footer = () => {
   return (
     <footer>
@@ -62,18 +63,7 @@ const Footer = () => {
             </div>
           </FooterWrapper>
           <FooterPaymentInfo>
-            <SocialLink>
-              <li>
-                <Link href="/">
-                  <TiSocialFacebookCircular />
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <TiSocialInstagramCircular />
-                </Link>
-              </li>
-            </SocialLink>
+            <SocialNetworksList/>
             <PaymentList>
               {paymentMethods &&
                 paymentMethods.map(({ id, icon }) => {

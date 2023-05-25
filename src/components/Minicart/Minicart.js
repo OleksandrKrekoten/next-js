@@ -1,20 +1,6 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
 
-const CloseBtn = styled.button`
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  color: #000;
-  font-size: 20px;
-  padding: 10px;
-  transition: color ease-out 400ms;
-  :hover,
-  :focus {
-    color: #0156ff;
-  }
-`;
-
 const Cart = styled.div`
   position: absolute;
   z-index: 999;
@@ -178,7 +164,13 @@ const Arrow = styled.div`
     left: -8px;
   }
 `;
+const BtnWrapper = styled.div`
+  position: absolute;
+  top: 0px;
+  right: 0px;
+`;
 export {
+  BtnWrapper,
   Arrow,
   LinkToPayPal,
   LinkToCheckout,
@@ -189,5 +181,4 @@ export {
   CartSubtitle,
   CartTitle,
   Cart,
-  CloseBtn,
 };

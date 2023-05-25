@@ -3,14 +3,10 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import {
   UserWrapper,
   SearcList,
-  UserList,
-  Arrow,
-  CloseBtn,
 } from "./UserMenu.js";
 import Image from "next/image.js";
 import Minicart from "../Minicart/Minicart.jsx";
-import { UserLinks } from "../../constants/index.js";
-import Link from "next/link.js";
+import UserMenuNavigation from "../UserMenuNavigation/UserMenuNavigation.jsx";
 
 const UserMenu = ({
   isOpenCart,
@@ -33,31 +29,17 @@ const UserMenu = ({
             <FiShoppingCart />
           </button>
         </li>
+        <li>
+          <button onClick={handleToggleUserList}>
+            <Image src="/user.jpg" alt="user photo" width={36} height={36} />
+          </button>
+        </li>
       </SearcList>
-      <div onClick={handleToggleUserList}>
-        <Image
-          src="/user.jpg"
-          alt="user photo"
-          width={36}
-          height={36}
-        
-        />
-      </div>
       <Minicart handleToggleCart={handleToggleCart} isOpenCart={isOpenCart} />
-      <UserList isOpenUserList={isOpenUserList}>
-        <Arrow />
-        <CloseBtn type="button" onClick={handleToggleUserList}>
-          <AiFillCloseCircle />
-        </CloseBtn>
-        {UserLinks &&
-          UserLinks.map(({ name, id, path }) => {
-            return (
-              <li key={id}>
-                <Link href={path}>{name}</Link>
-              </li>
-            );
-          })}
-      </UserList>
+      <UserMenuNavigation
+        handleToggleUserList={handleToggleUserList}
+        isOpenUserList={isOpenUserList}
+      />
     </UserWrapper>
   );
 };

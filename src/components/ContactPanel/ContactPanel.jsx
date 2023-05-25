@@ -1,115 +1,34 @@
-import { AiOutlineDown } from "react-icons/ai";
-import {
-  TiSocialInstagramCircular,
-  TiSocialFacebookCircular,
-} from "react-icons/ti";
+
 import {
   Wrapper,
   ContactLink,
-  WorkScheduleBlock,
-  Icon,
-  ContactWrapper,
-  Arrow,
-  ScheduleWrapper,
   Description,
   HeaderContactPanel,
-  CloseBtn,
-  OpenScheduleBtn,
 } from "./ContactPanel.js";
+import WorkSchedule from "../WorkSchedule/WorkSchedule.jsx";
 import { Container } from "../Container.js";
-import { AiFillClockCircle } from "react-icons/ai";
-import { FaLocationArrow } from "react-icons/fa";
-import { AiFillCloseCircle } from "react-icons/ai";
+
 import Link from "next/link.js";
+import WorkScheduleModal from "../WorkScheduleModal/WorkScheduleModal.jsx";
+import SocialNetworksList from "../SocialNetworksList/SocialNetworksList.jsx"
 const ContactPanel = ({ isOpenSchedule, handleToggleSchedule }) => {
   return (
     <HeaderContactPanel>
       <Container>
         <Wrapper>
-          <div>
-            <OpenScheduleBtn type="button" onClick={handleToggleSchedule}>
-              Mon-Thu:{" "}
-              <span>
-                9:00 AM - 5:30 PM <AiOutlineDown />
-              </span>
-            </OpenScheduleBtn>
-          </div>
+          <WorkSchedule handleToggleSchedule={handleToggleSchedule} />
           <Description>
-            Visit our showroom in 1234 Street Adress City Address, 1234{" "}
+            Visit our showroom in 1234 Street Adress City Address, 1234
             <Link href="/contact-us">Contact Us</Link>
           </Description>
           <ContactLink>
             <p>Call Us: (00) 1234 5678</p>
-            <ul>
-              <li>
-                <Link href="/">
-                  <TiSocialInstagramCircular />
-                </Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <TiSocialFacebookCircular />
-                </Link>
-              </li>
-            </ul>
+           <SocialNetworksList/>
           </ContactLink>
-          <WorkScheduleBlock isOpenSchedule={isOpenSchedule}>
-            <Arrow />
-            <CloseBtn type="button" onClick={handleToggleSchedule}>
-              <AiFillCloseCircle />
-            </CloseBtn>
-            <ScheduleWrapper>
-              <Icon>
-                <AiFillClockCircle />
-              </Icon>
-
-              <div>
-                <span>We are open:</span>
-                <ul>
-                  <li>
-                    <p>
-                      Mon-Thu: <span> 9:00 AM - 5:30 PM</span>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Fr: <span>9:00 AM - 6:00 PM</span>
-                    </p>
-                  </li>{" "}
-                  <li>
-                    <p>
-                      Sat: <span>11:00 AM - 5:00 PM</span>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </ScheduleWrapper>
-            <ScheduleWrapper>
-              <Icon>
-                <FaLocationArrow />
-              </Icon>
-              <div>
-                <span>
-                  Address: 1234 Street Adress,
-                  <br /> City Address, 1234
-                </span>
-              </div>
-            </ScheduleWrapper>
-            <ContactWrapper>
-              <Link href="tel:(00) 1234 5678">
-                <p>
-                  {" "}
-                  Phones: <span>(00) 1234 5678</span>
-                </p>
-              </Link>
-              <Link href="mailto:shop@email.com">
-                <p>
-                  {" "}
-                  E-mail: <span>shop@email.com</span>
-                </p>
-              </Link>
-            </ContactWrapper>
-          </WorkScheduleBlock>
+          <WorkScheduleModal
+            isOpenSchedule={isOpenSchedule}
+            handleToggleSchedule={handleToggleSchedule}
+          />
         </Wrapper>
       </Container>
     </HeaderContactPanel>

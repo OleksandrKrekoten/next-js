@@ -9,18 +9,20 @@ import {
   LinkToCheckout,
   LinkToPayPal,
   Arrow,
-  CloseBtn,
+  BtnWrapper,
 } from "./Minicart.js";
+
 import { ImPaypal } from "react-icons/im";
 import Image from "next/image.js";
-import { AiFillCloseCircle } from "react-icons/ai";
+
+import CloseCircleBtn from "../CloseCircleBtn/CloseCircleBtn.jsx";
 const Minicart = ({ isOpenCart, handleToggleCart }) => {
   return (
     <Cart isOpenCart={isOpenCart}>
       <Arrow />
-      <CloseBtn type="button" onClick={handleToggleCart}>
-        <AiFillCloseCircle />
-      </CloseBtn>
+      <BtnWrapper>
+        <CloseCircleBtn type="button" handleClick={handleToggleCart} />
+      </BtnWrapper>
       <CartTitle>My Cart</CartTitle>
       <CartSubtitle>2 item in cart</CartSubtitle>
       <LinkToCart href="/">View or Edit Your Cart</LinkToCart>
@@ -54,7 +56,6 @@ const Minicart = ({ isOpenCart, handleToggleCart }) => {
         Subtotal:<span> $499.00</span>
       </CartSum>
       <div>
-        {" "}
         <LinkToCheckout href="/">Go to Checkout</LinkToCheckout>
         <LinkToPayPal href="/">
           Check out with <ImPaypal />
