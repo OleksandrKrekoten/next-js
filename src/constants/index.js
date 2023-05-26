@@ -177,3 +177,15 @@ export const WorkScheduleData = [
     hourWork: "11:00 AM - 5:00 PM",
   },
 ];
+export const MinicartItem = [
+  {
+    id: idGenerator++,
+    image: "/cart/cart1.jpg",
+    name: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+  },
+  {
+    id: idGenerator++,
+    image: "/cart/cart2.jpg",
+    name: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+  },
+];

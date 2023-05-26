@@ -6,7 +6,6 @@ const WorkScheduleWeek = () => {
   return (
     <>
       <ScheduleWrapper>
-        {" "}
         <Icon>
           <AiFillClockCircle />
         </Icon>
