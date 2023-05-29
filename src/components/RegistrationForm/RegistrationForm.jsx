@@ -1,4 +1,4 @@
-import { Formik, } from "formik";
+import { Formik } from "formik";
 import {
   FormContainer,
   Label,
@@ -6,11 +6,15 @@ import {
   InputWrapper,
   InputContainer,
 } from "./RegistrationForm.js";
+import { schema, initialValues } from "../../models/registrationFormModel.js";
 import Button from "../Button/Button.jsx";
+import ErrorMessageField from "../ErrorMessageField/ErrorMessageField.jsx";
+
 const RegistrationForm = () => {
   return (
     <Formik
-      initialValues={{ email: "", password: "" }}
+      initialValues={initialValues}
+      validationSchema={schema}
       onSubmit={(values) => console.log(values)}
     >
       <FormContainer>
@@ -25,6 +29,7 @@ const RegistrationForm = () => {
               name="email"
               placeholder="Your Email"
             />
+            <ErrorMessageField name="email" />
           </InputWrapper>
           <InputWrapper>
             <Label htmlFor="password">
@@ -36,6 +41,7 @@ const RegistrationForm = () => {
               name="password"
               placeholder="Your Password"
             />
+            <ErrorMessageField name="password" />
           </InputWrapper>
           <InputWrapper>
             <Label htmlFor="firstname">
@@ -47,6 +53,7 @@ const RegistrationForm = () => {
               name="firstname"
               placeholder="Your First Name"
             />
+            <ErrorMessageField name="firstname" />
           </InputWrapper>
           <InputWrapper>
             <Label htmlFor="lastname">
@@ -58,6 +65,7 @@ const RegistrationForm = () => {
               name="lastname"
               placeholder="Your Last Name"
             />
+            <ErrorMessageField name="lastname" />
           </InputWrapper>
         </InputContainer>
         <Button type="submit">Create An Account</Button>

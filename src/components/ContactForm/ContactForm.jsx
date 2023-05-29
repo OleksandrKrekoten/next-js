@@ -1,3 +1,4 @@
+import { schema, initialValues } from "../../models/contactFormModel.js";
 import { Formik } from "formik";
 import {
   FormContainer,
@@ -8,15 +9,13 @@ import {
   FlexWrapper,
 } from "./ContactForm.js";
 import Button from "../Button/Button.jsx";
+import ErrorMessageField from "../ErrorMessageField/ErrorMessageField.jsx";
+
 const ContactForm = () => {
   return (
     <Formik
-      initialValues={{
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      }}
+      initialValues={initialValues}
+      validationSchema={schema}
       onSubmit={async (values) => {
         console.log(values);
       }}
@@ -28,16 +27,19 @@ const ContactForm = () => {
               Your Name <span>*</span>
             </Label>
             <Input name="name" type="text" placeholder="Your Name" />
+            <ErrorMessageField name="name" />
           </InputWrapper>
           <InputWrapper>
             <Label htmlFor="email">
               Your Email <span>*</span>
             </Label>
             <Input name="email" type="email" placeholder="Your Email" />
+            <ErrorMessageField name="email" />
           </InputWrapper>
           <InputWrapper>
             <Label htmlFor="phone">Your Phone Number</Label>
-            <Input name="phone" type="number" placeholder="Your Phone" />
+            <Input name="phone" type="text" placeholder="Your Phone" />
+            <ErrorMessageField name="phone" />
           </InputWrapper>
         </FlexWrapper>
         <InputWrapper>
@@ -49,6 +51,7 @@ const ContactForm = () => {
             as="textarea"
             placeholder="Jot us a note and we’ll get back to you as quickly as possible"
           />
+          <ErrorMessageField name="message" />
         </InputWrapper>
         <Button type="submit">Submit</Button>
       </FormContainer>
