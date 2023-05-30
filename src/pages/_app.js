@@ -1,9 +1,12 @@
-import '@/styles/globals.css'
-import Layout from '../components/Layout.jsx'
+import Layout from "../components/Layout.jsx";
+import GlobalStyle from "@/styles/GlobalStyle.styled.js";
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  ); 
+    <>
+      <GlobalStyle />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }

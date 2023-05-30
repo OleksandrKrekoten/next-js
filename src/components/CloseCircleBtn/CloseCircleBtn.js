@@ -3,6 +3,7 @@ const CloseBtn = styled.button`
   color: #000;
   font-size: 20px;
   padding: 10px;
+  background-color: transparent;
   transition: color ease-out 400ms;
   :hover,
   :focus {

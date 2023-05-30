@@ -30,16 +30,16 @@ const NavList = styled.ul`
         color: #0156ff;
         padding: 8px 16px;
         text-align: center;
-        border: 2px solid #0156ff;
         border-radius: 50px;
-
+        outline: 2px solid #0156ff;
+        outline-offset: 2px;
+        transition: outline-offset 200ms ease-out; /* Додано transition для плавного переходу */
+        :hover,
+        :focus {
+          outline-offset: 6px;
+        }
         @media screen and (min-width: 1350px) {
           padding: 8px 26px;
-        }
-        :focus,
-        :hover {
-          color: #000;
-          border-color: #000;
         }
       }
     }
