@@ -34,11 +34,11 @@ const TextBox = styled.div`
 `;
 const ItemTitle = styled.h3`
   font-weight: 500;
-  font-size: 26px;
+  font-size: 16px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 780px) {
-    font-size: 44px;
+    font-size: 32px;
   }
 `;
 const TitleIcon = styled.span`
@@ -59,7 +59,7 @@ const TitleWrap = styled.div`
 `;
 const ItemDescription = styled.p`
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
 `;
 const AboutUsImage = styled(Image)`
   @media screen and (max-width: 780px) {
