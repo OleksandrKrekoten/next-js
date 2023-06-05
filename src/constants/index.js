@@ -155,7 +155,7 @@ export const AboutContent = [
     image: "/about/about5.png",
   },
 ];
- export const ImagesSlider = [
+export const ImagesSlider = [
   { path: "/hero/msi1.jpg", alt: "msi baner" },
   { path: "/hero/msi2.jpg", alt: "msi baner" },
   { path: "/hero/msi3.jpg", alt: "msi baner" },
@@ -187,5 +187,70 @@ export const MinicartItem = [
     id: idGenerator++,
     image: "/cart/cart2.jpg",
     name: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+  },
+];
+export const NewProduct = [
+  {
+    id: idGenerator++,
+    brand: "Acer",
+    model: "Swift 7 Pro",
+    processor: "Intel Core i7-8500Y",
+    graphics_card: "Intel UHD Graphics 615",
+    ram: "16GB",
+    storage: "512GB NVMe SSD",
+    title_photo: "/acer/swift_7_pro.jpg",
+    photo: [
+      "/acer/swift_7_pro_1.jpg",
+      "/acer/swift_7_pro_2.jpg",
+      "/acer/swift_7_pro_3.jpg",
+    ],
+  },
+  {
+    id: idGenerator++,
+    brand: "Acer",
+    model: "Aspire 5",
+    processor: "Intel Core i5-1135G7",
+    graphics_card: "Intel Iris Xe Graphics",
+    ram: "8GB",
+    storage: "512GB NVMe SSD",
+    title_photo: "/acer/aspire_5.jpg",
+    photo: [
+      "/acer/aspire_5_1.jpg",
+      "/acer/aspire_5_2.jpg",
+      "/acer/aspire_5_3.jpg",
+    ],
+    price: "$799",
+  },
+  {
+    id: idGenerator++,
+    brand: "Acer",
+    model: "Predator Helios 300",
+    processor: "Intel Core i7-10750H",
+    graphics_card: "NVIDIA GeForce RTX 3060",
+    ram: "16GB",
+    storage: "1TB NVMe SSD",
+    title_photo: "/acer/predator_helios_300.jpg",
+    photo: [
+      "/acer/predator_helios_300_1.jpg",
+      "/acer/predator_helios_300_2.jpg",
+      "/acer/predator_helios_300_3.jpg",
+    ],
+    price: "$1499",
+  },
+  {
+    id: idGenerator++,
+    brand: "Acer",
+    model: "Swift 3",
+    processor: "AMD Ryzen 7 4700U",
+    graphics_card: "AMD Radeon Graphics",
+    ram: "16GB",
+    storage: "512GB NVMe SSD",
+    title_photo: "/acer/swift_3.jpg",
+    photo: [
+      "/acer/swift_3_1.jpg",
+      "/acer/swift_3_2.jpg",
+      "/acer/swift_3_3.jpg",
+    ],
+    price: "$899",
   },
 ];

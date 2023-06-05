@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styled from "@emotion/styled";
 
+
 const AboutUsItem = styled.li`
   display: flex;
   padding: 40px;
