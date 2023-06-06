@@ -8,7 +8,7 @@ import {
   LinkToPayPal,
   Arrow,
   BtnWrapper,
-} from "./Minicart.js";
+} from "./Minicart.styled.js";
 import { ImPaypal } from "react-icons/im";
 import CloseCircleBtn from "../CloseCircleBtn/CloseCircleBtn.jsx";
 import MinicartList from "../MinicartList/MinicartList.jsx";

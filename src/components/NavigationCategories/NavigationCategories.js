@@ -33,7 +33,7 @@ const NavList = styled.ul`
         border-radius: 50px;
         outline: 2px solid #0156ff;
         outline-offset: 2px;
-        transition: outline-offset 200ms ease-out; /* Додано transition для плавного переходу */
+        transition: outline-offset 200ms ease-out; 
         :hover,
         :focus {
           outline-offset: 6px;

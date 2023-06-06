@@ -9,7 +9,7 @@ import {
   LoginDescriptionTitle,
   LoginDescriptionText,
   LinkToRegister,
-} from "./LoginPage.js";
+} from "./LoginPage.styled.js";
 import Title from "../Title/Title.jsx";
 const LoginPage = () => {
   return (

@@ -1,5 +1,5 @@
 import { Formik } from "formik";
-import { FormContainer, Label, Input } from "./LoginForm.js";
+import { FormContainer, Label, Input } from "./LoginForm.styled.js";
 import Button from "../Button/Button.jsx";
 import ErrorMessageField from "../ErrorMessageField/ErrorMessageField.jsx";
 import { schema, initialValues } from "../../models/loginFormModel.js";

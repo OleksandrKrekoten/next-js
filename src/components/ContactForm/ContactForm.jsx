@@ -7,7 +7,7 @@ import {
   Textarea,
   Label,
   FlexWrapper,
-} from "./ContactForm.js";
+} from "./ContactForm.styled.js";
 import Button from "../Button/Button.jsx";
 import ErrorMessageField from "../ErrorMessageField/ErrorMessageField.jsx";
 

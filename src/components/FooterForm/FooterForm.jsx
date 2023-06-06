@@ -1,7 +1,7 @@
 import { Formik } from "formik";
 import * as yup from "yup";
 import Button from "../Button/Button.jsx";
-import { Input, FormWrapper } from "./FooterForm.js";
+import { Input, FormWrapper } from "./FooterForm.styled.js";
 import ErrorMessageField from "../ErrorMessageField/ErrorMessageField.jsx";
 
 const FooterForm = () => {

@@ -20,11 +20,11 @@ const Input = styled(Field)`
   width: 278px;
 
   height: 50px;
-  border: 1px solid #a2a6b0;
+  border: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
   border-radius: 4px;
   background-color: transparent;
   padding-left: 15px;
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   @media screen and (min-width: 500px) {
     width: 450px;
   }
@@ -33,18 +33,18 @@ const Textarea = styled(Field)`
   max-width: 925px;
   width: 100%;
   height: 270px;
-  border: 1px solid #a2a6b0;
+  border: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
   border-radius: 4px;
   background-color: transparent;
   padding: 15px;
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   margin-bottom: 16px;
 `;
 const Label = styled.label`
   font-weight: 600;
   font-size: 14px;
   line-height: 210%;
-  color: #000000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   margin-bottom: 6px;
   span {
     color: #c94d3f;

@@ -1,4 +1,4 @@
-import { Title, FooterSubtitle } from "./FooterTitle.js"
+import { Title, FooterSubtitle } from "./FooterTitle.styled.js"
 const FooterTitle = () => {
     return (
       <div>

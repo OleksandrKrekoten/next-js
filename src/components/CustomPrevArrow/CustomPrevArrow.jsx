@@ -1,5 +1,5 @@
 import { VscChevronLeft } from "react-icons/vsc";
-import {CustomArrowPrev}from "./CustomPrevArrow.js"
+import {CustomArrowPrev}from "./CustomPrevArrow.styled.js"
 const CustomPrevArrow = (props) => {
   const {  onClick } = props;
   return (

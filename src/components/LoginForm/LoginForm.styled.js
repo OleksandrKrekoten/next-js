@@ -10,21 +10,21 @@ padding: 20px 0;
 `
 const Label = styled.label`
   font-weight: 600;
-  font-size: 13px;
+  font-size: ${(props) => ` ${props.theme.fontSize.small}`};
   line-height: 210%;
-  color: #000000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   span {
-    color: #C94D3F;
+    color: #c94d3f;
   }
 `;
 const Input = styled(Field)`
-max-width: 580px;
+  max-width: 580px;
   height: 50px;
-  border: 1px solid #a2a6b0;
+  border: ${(props) => ` 1px solid ${props.theme.colors.secondaryText}`};
   border-radius: 4px;
   background-color: transparent;
   padding-left: 15px;
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
 `;
 
 export { FormContainer, Label, Input };

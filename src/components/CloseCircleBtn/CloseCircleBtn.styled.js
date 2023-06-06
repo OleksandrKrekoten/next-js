@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
 const CloseBtn = styled.button`
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   font-size: 20px;
   padding: 10px;
   background-color: transparent;
   transition: color ease-out 400ms;
   :hover,
   :focus {
-    color: #0156ff;
+    color: ${(props) => ` ${props.theme.colors.accent}`};
   }
 `;
 export { CloseBtn };

@@ -5,7 +5,7 @@ import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 import UserMenu from "../UserMenu/UserMenu.jsx";
 import NavigationCategories from "../NavigationCategories/NavigationCategories.jsx";
 import SearchBar from "../SearchBar/SearchBar.jsx";
-import { HeaderWrapper, MobileMenuBtn } from "./header.js";
+import { HeaderWrapper, MobileMenuBtn } from "./Header.styled.js";
 import { useState } from "react";
 import { Container } from "../Container.js";
 import Portal from "../Portal.jsx";

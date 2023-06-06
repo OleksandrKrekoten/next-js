@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styled from "@emotion/styled";
 
-
 const AboutUsItem = styled.li`
   display: flex;
   padding: 40px;
@@ -9,13 +8,14 @@ const AboutUsItem = styled.li`
   align-items: center;
   :nth-of-type(odd) {
     flex-direction: column;
-    background-color: #000;
-    color: #fff;
+    background-color: ${(props) =>
+      ` ${props.theme.colors.secondaryBackground}`};
+    color: ${(props) => ` ${props.theme.colors.textWhite}`};
   }
   :nth-of-type(even) {
     flex-direction: column-reverse;
-    background-color: #fff;
-    color: #000;
+    background-color: ${(props) => ` ${props.theme.colors.primaryBackground}`};
+    color: ${(props) => ` ${props.theme.colors.textBlack}`};
   }
   @media screen and (min-width: 680px) {
     padding: 90px;
@@ -35,32 +35,38 @@ const TextBox = styled.div`
 `;
 const ItemTitle = styled.h3`
   font-weight: 500;
-  font-size: 16px;
+  font-size: ${(props) => ` ${props.theme.fontSize.mediumText}`};
   margin-bottom: 30px;
 
   @media screen and (min-width: 780px) {
-    font-size: 32px;
+    font-size: ${(props) => ` ${props.theme.fontSize.largeTitle}`};
   }
 `;
 const TitleIcon = styled.span`
-  font-size: 30px;
-  display: block;
-  width: 40px;
-  height: 40px;
+  display: flex;
+  width: 20px;
+  height: 20px;
   padding: 6px;
   align-items: center;
   justify-content: center;
-  background-color: #0156ff;
+  background-color: ${(props) => ` ${props.theme.colors.accent}`};
 
   margin-right: 15px;
   border-radius: 36% 36% 0% 36% / 36% 36% 0% 36%;
+  font-size: ${(props) => ` ${props.theme.fontSize.mediumText}`};
+
+  @media screen and (min-width: 780px) {
+    width: 40px;
+    height: 40px;
+    font-size: ${(props) => ` ${props.theme.fontSize.largeTitle}`};
+  }
 `;
 const TitleWrap = styled.div`
   display: flex;
 `;
 const ItemDescription = styled.p`
   font-weight: 300;
-  font-size: 14px;
+  font-size: ${(props) => ` ${props.theme.fontSize.text}`};
 `;
 const AboutUsImage = styled(Image)`
   @media screen and (max-width: 780px) {

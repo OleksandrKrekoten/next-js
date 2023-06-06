@@ -1,16 +1,18 @@
 export const theme = {
   colors: {
-    primary: "#000000",
-    secondary: "#ACACAC",
+    secondaryBackground: "#000000",
+    primaryBackground: "#ffffff",
+    secondaryText: "#ACACAC",
     accent: "#0156FF",
     textWhite: "#ffffff",
-    textBlack:"#000000",
+    textBlack: "#020202",
     submitBtn: "#0156FF",
     payBtn: "#FFB800;",
   },
   fontSize: {
+    small: "12px",
     text: "14px",
     mediumText: "16px",
-    large: "32px",
+    largeTitle: "32px",
   },
 };

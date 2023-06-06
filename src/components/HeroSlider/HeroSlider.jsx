@@ -3,7 +3,7 @@ import CustomPrevArrow from "../CustomPrevArrow/CustomPrevArrow.jsx";
 import CustomNextArrow from "../CustomNextArrow/CustomNextArrow.jsx";
 import { ImagesSlider } from "../../constants/index.js";
 import { Container } from "../Container";
-import { SliderItem, Hero } from "./HeroSlider.js";
+import { SliderItem, Hero } from "./HeroSlider.styled.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

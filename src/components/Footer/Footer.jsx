@@ -2,7 +2,7 @@ import {
   FooterBackground,
   FooterWrapper,
   FooterPaymentInfo,
-} from "./Footer.js";
+} from "./Footer.styled.js";
 import { Container } from "../Container.js";
 import SocialNetworksList from "../SocialNetworksList/SocialNetworksList.jsx";
 import FooterForm from "../FooterForm/FooterForm.jsx";

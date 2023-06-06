@@ -1,4 +1,4 @@
-import {BlueBtn} from "./Button.js"
+import {BlueBtn} from "./Button.styled.js"
 const Button = ({ children }) => {
   return <BlueBtn>{children}</BlueBtn>;
 };

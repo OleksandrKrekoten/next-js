@@ -9,7 +9,7 @@ const Section = styled.section`
 
 const Description = styled.p`
   font-weight: 300;
-  font-size: 16px;
+  font-size: ${(props) => ` ${props.theme.fontSize.mediumText}`};
   line-height: 1.8;
   max-width: 690px;
   margin-bottom: 20px;
@@ -33,7 +33,7 @@ const ContactInformation = styled.div`
 const ContactInformationItem = styled.li`
   margin-bottom: 15px;
   line-height: 1.5;
-  color: #000000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
 `;
 const ContactInformationSubTitle = styled.p`
   font-weight: 600;
@@ -41,7 +41,7 @@ const ContactInformationSubTitle = styled.p`
 `;
 const ContactInformationDescription = styled.p`
   font-weight: 400;
-  font-size: 12px;
+  font-size: ${(props) => ` ${props.theme.fontSize.small}`};
 `;
 export {
   ContactInformationDescription,

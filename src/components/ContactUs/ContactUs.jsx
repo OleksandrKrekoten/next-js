@@ -8,7 +8,7 @@ import {
   ContactInformation,
   ContactInformationItem,
   ContactInformationSubTitle,
-} from "./ContactUs.js";
+} from "./ContactUs.styled.js";
 import Title from "../Title/Title.jsx";
 const ContactUs = () => {
   return (
