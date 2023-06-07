@@ -1,4 +1,4 @@
-import { Title, Text, ScheduleWrapper, Icon } from "./WorkScheduleWeek.js";
+import { Title, Text, ScheduleWrapper, Icon } from "./WorkScheduleWeek.styled.js";
 import { FaLocationArrow } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
 import { WorkScheduleData } from "../../constants/index.js";

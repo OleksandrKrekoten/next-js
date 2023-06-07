@@ -1,4 +1,4 @@
-import { Payment } from "./PaymentList.js";
+import { Payment } from "./PaymentList.styled.js";
 import { paymentMethods } from "../../constants/index.js";
 import Image from "next/image.js";
 const PaymentList = () => {

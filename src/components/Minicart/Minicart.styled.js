@@ -11,14 +11,14 @@ const Cart = styled.div`
   left: -220px;
   align-items: center;
   width: 310px;
-  background: #ffffff;
+  background: ${(props) => ` ${props.theme.colors.primaryBackground}`};
   font-weight: 400;
-  font-size: 14px;
+  font-size: ${(props) => ` ${props.theme.fontSize.text}`};
   line-height: 1.5;
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   padding: 24px 0;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
-  border: 1px solid #808080;
+  border: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
   border-radius: 12px;
 `;
 const CartTitle = styled.h2`
@@ -29,27 +29,27 @@ const CartTitle = styled.h2`
 `;
 const CartSubtitle = styled.p`
   font-size: 12px;
-  color: #a2a6b0;
+  color: ${(props) => ` ${props.theme.colors.secondaryText}`};
   margin-bottom: 16px;
 `;
 const LinkToCart = styled(Link)`
   padding: 8px 20px;
   font-weight: 600;
-  font-size: 14px;
-  color: #0156ff;
-  border: 2px solid #0156ff;
+  font-size: ${(props) => ` ${props.theme.fontSize.text}`};
+  color: ${(props) => ` ${props.theme.colors.accent}`};
+  border: ${(props) => `2px solid ${props.theme.colors.accent}`};
   border-radius: 50px;
   margin-bottom: 20px;
 `;
 
 const CartSum = styled.p`
   font-weight: 600;
-  font-size: 14px;
-  color: #a2a6b0;
+  font-size: ${(props) => ` ${props.theme.fontSize.text}`};
+  color: ${(props) => ` ${props.theme.colors.secondaryText}`};
   margin-bottom: 12px;
   span {
     font-size: 18px;
-    color: #000;
+    color: ${(props) => ` ${props.theme.colors.textBlack}`};
   }
 `;
 const LinkToCheckout = styled(Link)`
@@ -59,8 +59,8 @@ const LinkToCheckout = styled(Link)`
   min-width: 250px;
   font-weight: 600;
   font-size: 14px;
-  background: #0156ff;
-  color: #ffffff;
+  background: ${(props) => ` ${props.theme.colors.accent}`};
+  color: ${(props) => ` ${props.theme.colors.textWhite}`};
   border-radius: 50px;
   margin-bottom: 5px;
 `;
@@ -70,9 +70,9 @@ const LinkToPayPal = styled(Link)`
   padding: 15px 30px;
   min-width: 250px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: ${(props) => ` ${props.theme.fontSize.text}`};
   background: #ffb800;
-  color: #000000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   border-radius: 50px;
 `;
 const Arrow = styled.div`
@@ -82,7 +82,7 @@ const Arrow = styled.div`
   border-width: 9px;
   border-color: transparent;
   border-top-width: 0;
-  border-bottom: 9px solid #808080;
+  border-bottom: ${(props) => `9px solid ${props.theme.colors.secondaryText}`};
   width: 0;
   height: 0;
   font-size: 0;

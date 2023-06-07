@@ -1,4 +1,4 @@
-import { SuportIcon, SuportItem, FooterSuport, SuportList } from "./SuportList.js"
+import { SuportIcon, SuportItem, FooterSuport, SuportList } from "./SuportList.styled.js"
 import { suportContent } from "../../constants/index.js";
 const Suport = () => {
     return (

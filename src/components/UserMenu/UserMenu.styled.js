@@ -25,12 +25,12 @@ const SearcList = styled.ul`
     button {
       font-size: 19px;
       border: none;
-      color: #000;
+      color: ${(props) => ` ${props.theme.colors.textBlack}`};
       background-color: transparent;
       transition: color ease-out 400ms;
       :focus,
       :hover {
-        color: #0156ff;
+        color: ${(props) => ` ${props.theme.colors.accent}`};
       }
     }
   }

@@ -1,6 +1,6 @@
 import RegistrationForm from "../RegistrationForm/RegistrationForm.jsx";
 import { Container } from "../Container";
-import { SubText } from "./RegistrationPage.js";
+import { SubText } from "./RegistrationPage.styled.js";
 import Title from "../Title/Title.jsx";
 Container;
 const RegistrationPage = () => {

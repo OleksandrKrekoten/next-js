@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 const FooterSuport = styled.div`
-  background-color: #fff;
-  color: #000;
+  background-color: ${(props) => ` ${props.theme.colors.primaryBackground}`};
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   padding: 60px 0;
 `;
 const SuportList = styled.ul`
@@ -29,15 +29,12 @@ const SuportItem = styled.li`
       margin-right: 130px;
     }
   }
-
   h3 {
     font-weight: 700;
     font-size: 18px;
-    line-height: 132.5%;
   }
   p {
-    font-size: 14px;
-    line-height: 140%;
+    font-size: ${(props) => ` ${props.theme.fontSize.text}`};
     opacity: 0.7;
   }
 `;
@@ -47,7 +44,7 @@ const SuportIcon = styled.div`
   justify-content: center;
   width: 85px;
   height: 85px;
-  background-color: #0156ff;
+  background-color: ${(props) => ` ${props.theme.colors.accent}`};
   border-radius: 50%;
   font-size: 60px;
   margin-bottom: 24px;

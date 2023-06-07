@@ -11,13 +11,13 @@ const NavList = styled.ul`
   li {
     color: #000;
     font-weight: 600;
-    font-size: 14px;
+    font-size: ${(props) => ` ${props.theme.fontSize.text}`};
     transition: color ease-out 400ms, border-color ease-out 400ms;
     :not(:last-child) {
       margin-right: 15px;
       :focus,
       :hover {
-        color: #0156ff;
+        color: ${(props) => ` ${props.theme.colors.accent}`};
       }
     }
     @media screen and (min-width: 1000px) {
@@ -27,13 +27,13 @@ const NavList = styled.ul`
     }
     :last-child {
       a {
-        color: #0156ff;
+        color: ${(props) => ` ${props.theme.colors.accent}`};
         padding: 8px 16px;
         text-align: center;
         border-radius: 50px;
-        outline: 2px solid #0156ff;
+        outline: ${(props) => `1px solid ${props.theme.colors.accent}`};
         outline-offset: 2px;
-        transition: outline-offset 200ms ease-out; 
+        transition: outline-offset 200ms ease-out;
         :hover,
         :focus {
           outline-offset: 6px;

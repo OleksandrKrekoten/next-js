@@ -3,7 +3,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import {
   UserWrapper,
   SearcList,
-} from "./UserMenu.js";
+} from "./UserMenu.styled.js";
 import Image from "next/image.js";
 import Minicart from "../Minicart/Minicart.jsx";
 import UserMenuNavigation from "../UserMenuNavigation/UserMenuNavigation.jsx";

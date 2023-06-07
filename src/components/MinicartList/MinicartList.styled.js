@@ -44,7 +44,7 @@ const CartItem = styled.li`
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  border-bottom: 1px solid #cacdd8;
+  border-bottom: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
   width: 100%;
   p {
     font-size: 18px;
@@ -54,7 +54,7 @@ const CartItem = styled.li`
     margin-right: 5px;
   }
   h3 {
-    font-size: 12px;
+    font-size: ${(props) => ` ${props.theme.fontSize.small}`};
     font-weight: 400;
   }
 `;

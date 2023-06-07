@@ -13,20 +13,20 @@ const Input = styled(Field)`
   padding-left: 10px;
   background-color: transparent;
   border-radius: 12px;
-  border: 1px solid #cacdd8;
-  color: #000;
+  border: ${(props) => ` 1px solid${props.theme.colors.secondaryText}`};
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
 `;
 
 const SubmitBtn = styled.button`
-  color: #000;
-  font-size: 19px;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
+  font-size: 20px;
   background-color: transparent;
   border: none;
   margin: 0 10px;
   transition: color ease-out 400ms;
   :hover,
   :focus {
-    color: #0156ff;
+    color: ${(props) => ` ${props.theme.colors.accent}`};
   }
 `;
 export { SubmitBtn, Input, FormContainer };

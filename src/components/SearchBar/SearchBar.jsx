@@ -1,5 +1,5 @@
 import { Formik } from "formik";
-import { FormContainer, Input, SubmitBtn } from "./SearchBar.js";
+import { FormContainer, Input, SubmitBtn } from "./SearchBar.styled.js";
 import { FiSearch } from "react-icons/fi";
 const SearchBar = () => {
   return (

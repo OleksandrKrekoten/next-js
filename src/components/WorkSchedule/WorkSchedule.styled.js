@@ -10,7 +10,7 @@ const OpenScheduleBtn = styled.button`
     transition: color ease-out 400ms;
     :focus,
     :hover {
-      color: #0156ff;
+      color: ${(props) => ` ${props.theme.colors.accent}`};
     }
   }
 `;

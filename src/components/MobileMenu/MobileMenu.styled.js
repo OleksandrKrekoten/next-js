@@ -8,7 +8,7 @@ const MobileNav = styled.div`
   right: 0;
   width: 300px;
   height: 100vh;
-  background-color: #fff;
+  background-color: ${(props) => ` ${props.theme.colors.primaryBackground}`};
   padding: 50px 30px;
 
   @media screen and (min-width: 860px) {
@@ -36,12 +36,12 @@ const CloseModalBtn = styled.button`
   position: absolute;
   top: 30px;
   right: 30px;
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
   font-size: 30px;
   transition: color ease-out 400ms;
   :hover,
   :focus {
-    color: #0156ff;
+    color: ${(props) => ` ${props.theme.colors.accent}`};
   }
 `;
 export { CloseModalBtn, MobileNavList, MobileNav };

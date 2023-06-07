@@ -1,5 +1,5 @@
 import { AiOutlineDown } from "react-icons/ai";
-import {OpenScheduleBtn} from "./WorkSchedule.js"
+import {OpenScheduleBtn} from "./WorkSchedule.styled.js"
 const WorkSchedule = ({ handleToggleSchedule }) => {
   return (
     <div>

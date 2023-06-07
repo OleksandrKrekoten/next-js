@@ -2,7 +2,7 @@ import {
   TiSocialInstagramCircular,
   TiSocialFacebookCircular,
 } from "react-icons/ti";
-import {SocialLink} from "./SocialNetworksList.js"
+import {SocialLink} from "./SocialNetworksList.styled.js"
 const SocialNetworksList = () => {
   return (
     <SocialLink>

@@ -6,13 +6,13 @@ const WorkScheduleBlock = styled.div`
   top: 35px;
   left: 55px;
   width: 262px;
-  background: #ffffff;
-  border: 1px solid #808080;
+  background: ${(props) => ` ${props.theme.colors.primaryBackground}`};
+  border: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
   border-radius: 12px;
   padding: 10px 8px;
   transition: opacity 400 ease-in;
-  color: #000;
+  color: ${(props) => ` ${props.theme.colors.textBlack}`};
 `;
 
 
@@ -20,14 +20,14 @@ const ContactWrapper = styled.div`
   padding-top: 11px;
   padding-left: 11px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: ${(props) => ` ${props.theme.fontSize.text}`};
   line-height: 1.4;
   p {
-    color: #000000;
+    color: ${(props) => ` ${props.theme.colors.textBlack}`};
     text-decoration: none;
   }
   span {
-    color: #0156ff;
+    color:  ${(props) => ` ${props.theme.colors.accent}`};
   }
 `;
 const Arrow = styled.div`

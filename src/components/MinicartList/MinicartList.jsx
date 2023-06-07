@@ -1,6 +1,6 @@
 import { MinicartItem } from "../../constants/index.js";
 import Image from "next/image.js";
-import {CartList,CartItem} from "./MinicartList.js"
+import {CartList,CartItem} from "./MinicartList.styled.js"
 const MinicartList = () => {
   return (
     <CartList>

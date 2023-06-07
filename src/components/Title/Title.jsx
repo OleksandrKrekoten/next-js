@@ -1,4 +1,4 @@
-import {TitleStyled} from "./Title.js"
+import {TitleStyled} from "./Title.styled.js"
 const Title = ({ children }) => {
   return <TitleStyled>{children}</TitleStyled>;
 };

@@ -5,7 +5,7 @@ import {
   Input,
   InputWrapper,
   InputContainer,
-} from "./RegistrationForm.js";
+} from "./RegistrationForm.styled.js";
 import { schema, initialValues } from "../../models/registrationFormModel.js";
 import Button from "../Button/Button.jsx";
 import ErrorMessageField from "../ErrorMessageField/ErrorMessageField.jsx";

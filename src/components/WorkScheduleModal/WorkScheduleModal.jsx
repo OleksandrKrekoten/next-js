@@ -3,7 +3,7 @@ BtnWrapper,
   Arrow,
   ContactWrapper,
   WorkScheduleBlock,
-} from "./WorkScheduleModal.js";
+} from "./WorkScheduleModal.styled.js";
 import WorkScheduleWeek from "../WorkScheduleWeek/WorkScheduleWeek.jsx";
 import CloseCircleBtn from "../CloseCircleBtn/CloseCircleBtn.jsx";
 

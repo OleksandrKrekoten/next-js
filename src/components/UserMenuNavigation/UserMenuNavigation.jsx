@@ -1,6 +1,6 @@
 import Link from "next/link.js";
 import { UserLinks } from "../../constants";
-import { BtnWrapper, Arrow, UserList } from "./UserMenuNavigation.js";
+import { BtnWrapper, Arrow, UserList } from "./UserMenuNavigation.styled";
 import CloseCircleBtn from "../CloseCircleBtn/CloseCircleBtn.jsx";
 
 const UserMenuNavigation = ({ isOpenUserList, handleToggleUserList }) => {
