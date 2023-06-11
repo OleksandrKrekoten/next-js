@@ -6,7 +6,7 @@ import { Container } from "../Container";
 import { SliderItem, Hero } from "./HeroSlider.styled.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import ProductCard from "../ProductCard/ProductCard.jsx"
 const HeroSlider = () => {
   const settings = {
     dots: false,
@@ -33,6 +33,7 @@ const HeroSlider = () => {
             })}
         </Slider>
       </Hero>
+      <ProductCard/>
     </Container>
   );
 };
