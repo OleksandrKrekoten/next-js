@@ -1,20 +1,14 @@
 import Image from "next/image";
 import { Card, CardTitle,Price } from "./ProductCard.styled.js";
 
-const ProductCard = () => {
-    return (
-      <Card>
-        <Image
-          src="/cart/cart1.jpg"
-          alt="product photo"
-          width={150}
-          height={150}
-        />
-        <CardTitle>
-          EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
-        </CardTitle>
-        <Price>$499.00</Price>
-      </Card>
-    );
-}
+const ProductCard = ({post}) => {
+  const {brand,model,photo,price}=post
+  return (
+    <Card>
+      <Image src={photo[0]} alt="product photo" width={150} height={140} />
+      <CardTitle>{brand + " " + model}</CardTitle>
+      <Price>{price}</Price>
+    </Card>
+  );
+};
 export default ProductCard;
