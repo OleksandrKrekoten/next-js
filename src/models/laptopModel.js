@@ -9,5 +9,5 @@ const LaptopSchema = new Schema({
   storage: String,
   photo: Array,
 });
-const Laptop = models.User || model("Laptop", LaptopSchema);
+const Laptop = models.Laptop || model("Laptop", LaptopSchema);
 export default Laptop;

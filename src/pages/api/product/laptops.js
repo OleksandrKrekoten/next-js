@@ -5,9 +5,9 @@ async function laptops(req, res) {
   await ConnectMongo();
    if (req.method === "GET") {
      try {
-         const { page, limit } = req.query; // Отримати параметри сторінки та ліміту з параметрів запиту
+         const { page, limit } = req.query; 
 
-         const pageNumber = parseInt(page) || 1;
+         const pageNumber = parseInt(page) || 2;
          const limitNumber = parseInt(limit) || 20;
 
          const skip = (pageNumber - 1) * limitNumber;

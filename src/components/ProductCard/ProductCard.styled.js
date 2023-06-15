@@ -4,13 +4,22 @@ const Card = styled.li`
   display: flex;
   align-items: center;
   width: 234px;
-  border: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
   padding: 25px;
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
 `;
 const CardTitle = styled.h2`
   font-weight: 400;
   font-size: ${(props) => `${props.theme.fontSize.small}`};
   margin: 10px 0;
+  transition: color 300ms ease-out;
+  :hover,
+  :focus {
+    color: ${(props) => `${props.theme.colors.accent}`};
+    text-decoration: underline;
+  }
 `;
 const Price = styled.p`
   font-weight: 600;

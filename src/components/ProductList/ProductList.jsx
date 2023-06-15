@@ -1,10 +1,11 @@
 import ProductCard from "../ProductCard/ProductCard";
-
-const ProductList = ({ posts }) => (
-  <ul>
-    {posts && posts.map((post) => <ProductCard key={posts._id} post={post} />)}
-  </ul>
-);
-
+import {List} from "./ProductList.styled.js"
+const ProductList = ({ posts }) => {
+  return (
+    <List>
+      {posts && posts.map((post) => <ProductCard key={post._id} post={post} />)}
+    </List>
+  );
+};
 
 export default ProductList;

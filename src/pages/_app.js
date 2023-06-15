@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@emotion/react";
 import Layout from "../components/Layout.jsx";
-import GlobalStyle from "../styles/globalStyle.styled.js";
+import GlobalStyle from "../styles/GlobalStyle.styled.js";
 import { theme } from "@/styles/theme.js";
 
 export default function App({ Component, pageProps }) {
