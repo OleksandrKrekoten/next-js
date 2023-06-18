@@ -1,6 +1,7 @@
 import { Schema, model, models } from "mongoose";
 
 const LaptopSchema = new Schema({
+  category: String,
   brand: String,
   model: String,
   processor: String,
