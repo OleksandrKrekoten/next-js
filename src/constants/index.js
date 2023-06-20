@@ -13,7 +13,7 @@ export const navLinks = [
   {
     name: "Laptops",
     id: idGenerator++,
-    path: "laptops",
+    path: "laptop",
   },
   {
     name: "Desktop PCs",

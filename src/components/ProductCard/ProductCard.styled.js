@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Image from "next/image";
 const Card = styled.li`
   flex-direction: column;
   display: flex;
@@ -26,4 +27,15 @@ const Price = styled.p`
   font-size: 18px;
   color: ${(props) => ` ${props.theme.colors.textBlack}`};
 `;
-export { Card, CardTitle, Price };
+const ProductImage = styled(Image)`
+  width: 100%;
+  height:auto;
+`;
+const ImageWrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+  width: 234px;
+  height: 234px;
+`;
+export { Card, CardTitle, Price, ProductImage, ImageWrapper };

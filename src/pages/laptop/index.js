@@ -1,8 +1,9 @@
 import LaptopsPage from "@/components/LaptopsPage/LaptopsPage";
+import api from "@/utils/api";
 
 export const getServerSideProps = async () => {
-  const res = await fetch("http://localhost:3000/api/product/laptops");
-  const posts = await res.json();
+  const res = await api.get("/laptops");
+  const posts = await res.data;
   return {
     props: { posts }
   };

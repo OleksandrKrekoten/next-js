@@ -6,6 +6,7 @@ import { Container } from "../Container";
 import { SliderItem, Hero } from "./HeroSlider.styled.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image.js";
 
 const HeroSlider = () => {
   const settings = {
@@ -27,7 +28,7 @@ const HeroSlider = () => {
             ImagesSlider.map(({ path, alt }) => {
               return (
                 <div key={path}>
-                  <SliderItem src={path} alt={alt} />
+                  <SliderItem src={path} alt={alt} width={1200} height={400} />
                 </div>
               );
             })}
