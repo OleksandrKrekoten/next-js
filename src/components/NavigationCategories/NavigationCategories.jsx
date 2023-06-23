@@ -8,7 +8,7 @@ const NavigationCategories = () => {
         {navLinks &&
           navLinks.map(({ name, id, path }) => (
             <li key={id}>
-              <Link href={`/${path}`}>{name}</Link>
+              <Link href={`${path}`}>{name}</Link>
             </li>
           ))}
       </NavList>

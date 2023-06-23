@@ -3,7 +3,7 @@ import api from "@/utils/api";
 
 export const getStaticPaths = async () => {
  const res = await api.get("/laptops");
- const posts = await res.data;
+ const posts = await res.data.posts;
 
   const paths = posts.map(({ _id }) => ({
     params: { id: _id.toString() },

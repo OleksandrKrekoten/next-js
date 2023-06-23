@@ -3,13 +3,13 @@ import api from "@/utils/api";
 
 export const getServerSideProps = async () => {
   const res = await api.get("/laptops");
-  const posts = await res.data;
+  const data = await res.data;
   return {
-    props: { posts }
+    props: { data },
   };
 };
 
-const Laptops = ({ posts }) => {
-  return <LaptopsPage posts={posts} />;
+const Laptops = ({ data }) => {
+  return <LaptopsPage data={data} />;
 };
 export default Laptops;

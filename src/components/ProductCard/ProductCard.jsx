@@ -1,4 +1,3 @@
-
 import Link from "next/link.js";
 import {
   Card,
@@ -8,15 +7,10 @@ import {
   ImageWrapper,
 } from "./ProductCard.styled.js";
 
-
 const ProductCard = ({ post }) => {
   return (
     <Card>
-      <Link
-        href={`${process.env.BASE_URL}/${post.category.toLowerCase()}/${
-          post._id
-        }`}
-      >
+      <Link href={`/${post.category.toLowerCase()}/${post._id}`}>
         <ImageWrapper>
           <ProductImage
             src={post.photo[3]}

@@ -7,7 +7,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   background-color: ${(props) => ` ${props.theme.colors.primaryBackground}`};
   padding: 10px 0;
-  margin-bottom:30px;
+  margin-bottom:10px;
 `;
 const MobileMenuBtn = styled.button`
   color: ${(props) => ` ${props.theme.colors.textBlack}`};

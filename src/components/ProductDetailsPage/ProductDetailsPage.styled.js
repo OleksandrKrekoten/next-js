@@ -21,7 +21,7 @@ overflow: hidden;
 const YellowBtn = styled.button`
   background: #ffb800;
   display: block;
-  max-width: 250px;
+  min-width: 190px;
   max-height: 50px;
   border-radius: 100px;
   padding: 15px 30px;
@@ -38,9 +38,18 @@ const YellowBtn = styled.button`
   }
 `;
 const FlexWrapper = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap:30px
-`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  button {
+    @media screen and (max-width: 880px) {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
 export { Wrapper, SliderWrapper, YellowBtn, FlexWrapper };

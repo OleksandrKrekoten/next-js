@@ -13,59 +13,59 @@ export const navLinks = [
   {
     name: "Laptops",
     id: idGenerator++,
-    path: "laptop",
+    path: "/laptop",
   },
   {
     name: "Desktop PCs",
     id: idGenerator++,
-    path: "desktop-pcs",
+    path: "/desktop-pcs",
   },
   {
     name: "Networking Devices",
     id: idGenerator++,
-    path: "networking-devices",
+    path: "/networking-devices",
   },
   {
     name: "Printers & Scanners",
     id: idGenerator++,
-    path: "printers-scanners",
+    path: "/printers-scanners",
   },
   {
     name: "Gaming Monitors",
     id: idGenerator++,
-    path: "gaming-monitors",
+    path: "/gaming-monitors",
   },
   {
     name: "About",
     id: idGenerator++,
-    path: "about",
+    path: "/about",
   },
 ];
 export const UserLinks = [
   {
     name: "My  Account",
     id: idGenerator++,
-    path: "user",
+    path: "/user",
   },
   {
     name: "My Wish List",
     id: idGenerator++,
-    path: "wish-list",
+    path: "/wish-list",
   },
   {
     name: "Compare",
     id: idGenerator++,
-    path: "compare",
+    path: "/compare",
   },
   {
     name: "Create an Account",
     id: idGenerator++,
-    path: "registration",
+    path: "/registration",
   },
   {
     name: "Sign In",
     id: idGenerator++,
-    path: "login",
+    path: "/login",
   },
 ];
 export const suportContent = [

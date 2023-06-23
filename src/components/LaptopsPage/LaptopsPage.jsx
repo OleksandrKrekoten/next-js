@@ -2,12 +2,12 @@ import Title from "../Title/Title.jsx";
 import { Container } from "../Container";
 import ProductList from "../ProductList/ProductList.jsx";
 
-const LaptopsPage = ({ posts }) => {
+const LaptopsPage = ({ data }) => {
   return (
     <Container>
       <section>
         <Title>Laptops</Title>
-        <ProductList posts={posts} />
+        <ProductList data={data} />
       </section>
     </Container>
   );
