@@ -1,15 +1,19 @@
 import LaptopsPage from "@/components/LaptopsPage/LaptopsPage";
 import api from "@/utils/api";
 
-export const getServerSideProps = async () => {
-  const res = await api.get("/laptops");
+export const getServerSideProps = async ({ query: { page = 1 } }) => {
+  const res = await api.get(`/laptops?page=${page}`);
   const data = await res.data;
+  const currentPage = parseFloat(page);
   return {
-    props: { data },
+    props: {
+      data,
+      page:currentPage,
+    },
   };
 };
 
-const Laptops = ({ data }) => {
-  return <LaptopsPage data={data} />;
+const Laptops = ({ data, page }) => {
+  return <LaptopsPage data={data} page={page} />;
 };
 export default Laptops;

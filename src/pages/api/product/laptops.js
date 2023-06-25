@@ -7,7 +7,7 @@ async function laptops(req, res) {
     try {
       const { page } = req.query;
 
-      const pageNumber = parseInt(page) || 2;
+      const pageNumber = parseInt(page);
       const limitNumber =  20;
 
       const skip = (pageNumber - 1) * limitNumber;
@@ -17,7 +17,7 @@ async function laptops(req, res) {
      const totalPages = Math.ceil(totalCount / limitNumber);
 
      const posts = await Laptop.find({ category: "Laptop" })
-       .sort({ model: 1 })
+       .sort( )
        .skip(skip)
        .limit(limitNumber);
 
