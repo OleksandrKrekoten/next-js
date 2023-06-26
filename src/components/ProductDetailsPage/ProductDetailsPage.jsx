@@ -14,7 +14,7 @@ const ProductDetailsPage = ({ post }) => {
   return (
     <Container>
       <FlexWrapper>
-        <Title>{post.brand + " " + post.model}</Title>
+        <Title>{post&& post.brand + " " + post.model}</Title>
         <FlexWrapper>
           <Button>Add to Cart</Button>
           <YellowBtn>Add to Wish List</YellowBtn>

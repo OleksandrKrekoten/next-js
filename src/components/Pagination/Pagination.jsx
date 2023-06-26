@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { Btn, BtnWrapper } from "./Pagination.styled";
 
 const Pagination = ({ totalPages,page }) => {
   const router = useRouter();
@@ -19,10 +20,10 @@ const Pagination = ({ totalPages,page }) => {
   };
 
   return (
-    <div>
-      {page > 1 && <button onClick={handlePreviousPage}>Previous Page</button>}
-      {page < totalPages && <button onClick={handleNextPage}>Next Page</button>}
-    </div>
+    <BtnWrapper>
+      {page > 1 && <Btn onClick={handlePreviousPage}>Previous Page</Btn>}
+      {page < totalPages && <Btn onClick={handleNextPage}>Next Page</Btn>}
+    </BtnWrapper>
   );
 };
 
