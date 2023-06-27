@@ -9,26 +9,31 @@ import {
   YellowBtn,
   FlexWrapper,
 } from "./ProductDetailsPage.styled";
-const ProductDetailsPage = ({ post }) => {
 
+const ProductDetailsPage = ({ post }) => {
   return (
     <Container>
-      <FlexWrapper>
-        <Title>{post&& post.brand + " " + post.model}</Title>
+      {post ? (
         <FlexWrapper>
-          <Button>Add to Cart</Button>
-          <YellowBtn>Add to Wish List</YellowBtn>
+          <Title>{post.brand + " " + post.model}</Title>
+          <FlexWrapper>
+            <Button>Add to Cart</Button>
+            <YellowBtn>Add to Wish List</YellowBtn>
+          </FlexWrapper>
         </FlexWrapper>
-      </FlexWrapper>
-      <Wrapper>
-        <SliderWrapper>
-          <ProductDetailsSlider photo={post.photo} />
-        </SliderWrapper>
-        <div>
-          <ProductDetailsDescription post={post} />
-        </div>
-      </Wrapper>
+      ) : null}
+      {post ? (
+        <Wrapper>
+          <SliderWrapper>
+            <ProductDetailsSlider photo={post.photo} />
+          </SliderWrapper>
+          <div>
+            <ProductDetailsDescription post={post} />
+          </div>
+        </Wrapper>
+      ) : null}
     </Container>
   );
 };
+
 export default ProductDetailsPage;
